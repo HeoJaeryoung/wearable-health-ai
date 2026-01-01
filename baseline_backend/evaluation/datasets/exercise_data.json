@@ -1,0 +1,784 @@
+{
+  "test_cases": [
+    {
+      "id": "ED001",
+      "type": "exercise_recommendation",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 113,
+        "resting_heart_rate": 96,
+        "sleep_hr": 4.3,
+        "steps": 2028,
+        "distance_km": 1.5,
+        "active_calories": 49,
+        "oxygen_saturation": 91,
+        "weight": 77.4,
+        "bmi": 32.3
+      },
+      "options": {
+        "difficulty": "중",
+        "duration_min": 15
+      },
+      "expected": {
+        "intensity_level": "저강도",
+        "keywords": ["가벼운", "스트레칭", "휴식", "주의"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED002",
+      "type": "exercise_recommendation",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 86,
+        "resting_heart_rate": 68,
+        "sleep_hr": 7.0,
+        "steps": 7569,
+        "distance_km": 6.5,
+        "active_calories": 457,
+        "oxygen_saturation": 99,
+        "weight": 95.0,
+        "bmi": 22.6
+      },
+      "options": {
+        "difficulty": "중",
+        "duration_min": 45
+      },
+      "expected": {
+        "intensity_level": "중-고강도",
+        "keywords": ["운동", "루틴", "세트", "분"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED003",
+      "type": "exercise_recommendation",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 121,
+        "resting_heart_rate": 89,
+        "sleep_hr": 4.9,
+        "steps": 1855,
+        "distance_km": 1.2,
+        "active_calories": 61,
+        "oxygen_saturation": 90,
+        "weight": 83.9,
+        "bmi": 30.3
+      },
+      "options": {
+        "difficulty": "중",
+        "duration_min": 45
+      },
+      "expected": {
+        "intensity_level": "저강도",
+        "keywords": ["가벼운", "스트레칭", "휴식", "주의"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED004",
+      "type": "exercise_recommendation",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 63,
+        "resting_heart_rate": 65,
+        "sleep_hr": 7.6,
+        "steps": 9311,
+        "distance_km": 5.7,
+        "active_calories": 344,
+        "oxygen_saturation": 95,
+        "weight": 84.5,
+        "bmi": 19.2
+      },
+      "options": {
+        "difficulty": "상",
+        "duration_min": 20
+      },
+      "expected": {
+        "intensity_level": "중-고강도",
+        "keywords": ["운동", "루틴", "세트", "분"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED005",
+      "type": "exercise_recommendation",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 67,
+        "resting_heart_rate": 65,
+        "sleep_hr": 7.5,
+        "steps": 7563,
+        "distance_km": 6.4,
+        "active_calories": 331,
+        "oxygen_saturation": 97,
+        "weight": 86.4,
+        "bmi": 21.2
+      },
+      "options": {
+        "difficulty": "하",
+        "duration_min": 30
+      },
+      "expected": {
+        "intensity_level": "중-고강도",
+        "keywords": ["운동", "루틴", "세트", "분"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED006",
+      "type": "exercise_recommendation",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 81,
+        "resting_heart_rate": 60,
+        "sleep_hr": 7.3,
+        "steps": 8837,
+        "distance_km": 5.5,
+        "active_calories": 343,
+        "oxygen_saturation": 99,
+        "weight": 64.5,
+        "bmi": 24.4
+      },
+      "options": {
+        "difficulty": "하",
+        "duration_min": 15
+      },
+      "expected": {
+        "intensity_level": "중-고강도",
+        "keywords": ["운동", "루틴", "세트", "분"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED007",
+      "type": "exercise_recommendation",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 65,
+        "resting_heart_rate": 60,
+        "sleep_hr": 7.8,
+        "steps": 9697,
+        "distance_km": 6.5,
+        "active_calories": 400,
+        "oxygen_saturation": 97,
+        "weight": 77.1,
+        "bmi": 20.3
+      },
+      "options": {
+        "difficulty": "중",
+        "duration_min": 30
+      },
+      "expected": {
+        "intensity_level": "중-고강도",
+        "keywords": ["운동", "루틴", "세트", "분"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED008",
+      "type": "exercise_recommendation",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 129,
+        "resting_heart_rate": 87,
+        "sleep_hr": 3.9,
+        "steps": 2042,
+        "distance_km": 0.6,
+        "active_calories": 34,
+        "oxygen_saturation": 90,
+        "weight": 93.9,
+        "bmi": 31.6
+      },
+      "options": {
+        "difficulty": "상",
+        "duration_min": 30
+      },
+      "expected": {
+        "intensity_level": "저강도",
+        "keywords": ["가벼운", "스트레칭", "휴식", "주의"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED009",
+      "type": "exercise_recommendation",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 79,
+        "resting_heart_rate": 66,
+        "sleep_hr": 7.7,
+        "steps": 8972,
+        "distance_km": 6.2,
+        "active_calories": 412,
+        "oxygen_saturation": 95,
+        "weight": 52.1,
+        "bmi": 19.1
+      },
+      "options": {
+        "difficulty": "상",
+        "duration_min": 45
+      },
+      "expected": {
+        "intensity_level": "중-고강도",
+        "keywords": ["운동", "루틴", "세트", "분"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED010",
+      "type": "exercise_recommendation",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 65,
+        "resting_heart_rate": 66,
+        "sleep_hr": 7.2,
+        "steps": 7633,
+        "distance_km": 6.4,
+        "active_calories": 388,
+        "oxygen_saturation": 99,
+        "weight": 77.7,
+        "bmi": 27.6
+      },
+      "options": {
+        "difficulty": "중",
+        "duration_min": 15
+      },
+      "expected": {
+        "intensity_level": "중강도",
+        "keywords": ["운동", "루틴", "주의", "세트"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED011",
+      "type": "exercise_recommendation",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 83,
+        "resting_heart_rate": 78,
+        "sleep_hr": 7.6,
+        "steps": 8522,
+        "distance_km": 7.8,
+        "active_calories": 430,
+        "oxygen_saturation": 99,
+        "weight": 60.3,
+        "bmi": 27.1
+      },
+      "options": {
+        "difficulty": "하",
+        "duration_min": 15
+      },
+      "expected": {
+        "intensity_level": "중강도",
+        "keywords": ["운동", "루틴", "주의", "세트"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED012",
+      "type": "exercise_recommendation",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 76,
+        "resting_heart_rate": 60,
+        "sleep_hr": 7.3,
+        "steps": 6391,
+        "distance_km": 7.3,
+        "active_calories": 349,
+        "oxygen_saturation": 98,
+        "weight": 82.9,
+        "bmi": 26.4
+      },
+      "options": {
+        "difficulty": "하",
+        "duration_min": 20
+      },
+      "expected": {
+        "intensity_level": "중강도",
+        "keywords": ["운동", "루틴", "주의", "세트"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED013",
+      "type": "exercise_recommendation",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 91,
+        "resting_heart_rate": 63,
+        "sleep_hr": 7.2,
+        "steps": 7574,
+        "distance_km": 7.9,
+        "active_calories": 324,
+        "oxygen_saturation": 97,
+        "weight": 61.7,
+        "bmi": 29.8
+      },
+      "options": {
+        "difficulty": "상",
+        "duration_min": 20
+      },
+      "expected": {
+        "intensity_level": "중강도",
+        "keywords": ["운동", "루틴", "주의", "세트"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED014",
+      "type": "exercise_recommendation",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 69,
+        "resting_heart_rate": 60,
+        "sleep_hr": 7.0,
+        "steps": 9194,
+        "distance_km": 7.8,
+        "active_calories": 399,
+        "oxygen_saturation": 94,
+        "weight": 74.8,
+        "bmi": 19.7
+      },
+      "options": {
+        "difficulty": "상",
+        "duration_min": 60
+      },
+      "expected": {
+        "intensity_level": "중강도",
+        "keywords": ["운동", "루틴", "주의", "세트"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED015",
+      "type": "exercise_recommendation",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 91,
+        "resting_heart_rate": 62,
+        "sleep_hr": 7.7,
+        "steps": 8648,
+        "distance_km": 7.6,
+        "active_calories": 325,
+        "oxygen_saturation": 99,
+        "weight": 52.6,
+        "bmi": 25.8
+      },
+      "options": {
+        "difficulty": "하",
+        "duration_min": 20
+      },
+      "expected": {
+        "intensity_level": "중강도",
+        "keywords": ["운동", "루틴", "주의", "세트"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED016",
+      "type": "exercise_recommendation",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 64,
+        "resting_heart_rate": 69,
+        "sleep_hr": 6.1,
+        "steps": 5128,
+        "distance_km": 5.9,
+        "active_calories": 415,
+        "oxygen_saturation": 95,
+        "weight": 78.4,
+        "bmi": 23.6
+      },
+      "options": {
+        "difficulty": "상",
+        "duration_min": 30
+      },
+      "expected": {
+        "intensity_level": "중강도",
+        "keywords": ["운동", "루틴", "주의", "세트"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED017",
+      "type": "exercise_recommendation",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 98,
+        "resting_heart_rate": 73,
+        "sleep_hr": 7.6,
+        "steps": 9202,
+        "distance_km": 5.8,
+        "active_calories": 346,
+        "oxygen_saturation": 98,
+        "weight": 59.9,
+        "bmi": 20.7
+      },
+      "options": {
+        "difficulty": "하",
+        "duration_min": 15
+      },
+      "expected": {
+        "intensity_level": "중-고강도",
+        "keywords": ["운동", "루틴", "세트", "분"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED018",
+      "type": "exercise_recommendation",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 95,
+        "resting_heart_rate": 70,
+        "sleep_hr": 8.0,
+        "steps": 8941,
+        "distance_km": 5.6,
+        "active_calories": 379,
+        "oxygen_saturation": 99,
+        "weight": 78.3,
+        "bmi": 24.9
+      },
+      "options": {
+        "difficulty": "하",
+        "duration_min": 20
+      },
+      "expected": {
+        "intensity_level": "중-고강도",
+        "keywords": ["운동", "루틴", "세트", "분"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED019",
+      "type": "exercise_recommendation",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 87,
+        "resting_heart_rate": 63,
+        "sleep_hr": 6.3,
+        "steps": 6686,
+        "distance_km": 7.6,
+        "active_calories": 440,
+        "oxygen_saturation": 95,
+        "weight": 62.9,
+        "bmi": 19.0
+      },
+      "options": {
+        "difficulty": "상",
+        "duration_min": 20
+      },
+      "expected": {
+        "intensity_level": "중강도",
+        "keywords": ["운동", "루틴", "주의", "세트"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED020",
+      "type": "exercise_recommendation",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 66,
+        "resting_heart_rate": 63,
+        "sleep_hr": 7.7,
+        "steps": 8091,
+        "distance_km": 7.0,
+        "active_calories": 436,
+        "oxygen_saturation": 93,
+        "weight": 62.6,
+        "bmi": 20.3
+      },
+      "options": {
+        "difficulty": "중",
+        "duration_min": 45
+      },
+      "expected": {
+        "intensity_level": "중강도",
+        "keywords": ["운동", "루틴", "주의", "세트"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED021",
+      "type": "exercise_recommendation",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 70,
+        "resting_heart_rate": 62,
+        "sleep_hr": 6.7,
+        "steps": 9944,
+        "distance_km": 7.8,
+        "active_calories": 328,
+        "oxygen_saturation": 95,
+        "weight": 68.5,
+        "bmi": 21.7
+      },
+      "options": {
+        "difficulty": "중",
+        "duration_min": 45
+      },
+      "expected": {
+        "intensity_level": "중강도",
+        "keywords": ["운동", "루틴", "주의", "세트"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED022",
+      "type": "exercise_recommendation",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 105,
+        "resting_heart_rate": 77,
+        "sleep_hr": 6.9,
+        "steps": 5174,
+        "distance_km": 4.7,
+        "active_calories": 254,
+        "oxygen_saturation": 94,
+        "weight": 51.0,
+        "bmi": 28.3
+      },
+      "options": {
+        "difficulty": "하",
+        "duration_min": 20
+      },
+      "expected": {
+        "intensity_level": "저강도",
+        "keywords": ["가벼운", "스트레칭", "휴식", "주의"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED023",
+      "type": "exercise_recommendation",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 74,
+        "resting_heart_rate": 96,
+        "sleep_hr": 8.7,
+        "steps": 3215,
+        "distance_km": 2.6,
+        "active_calories": 541,
+        "oxygen_saturation": 93,
+        "weight": 62.7,
+        "bmi": 23.7
+      },
+      "options": {
+        "difficulty": "하",
+        "duration_min": 45
+      },
+      "expected": {
+        "intensity_level": "저강도",
+        "keywords": ["가벼운", "스트레칭", "휴식", "주의"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED024",
+      "type": "exercise_recommendation",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 75,
+        "resting_heart_rate": 93,
+        "sleep_hr": 8.8,
+        "steps": 4599,
+        "distance_km": 2.2,
+        "active_calories": 735,
+        "oxygen_saturation": 93,
+        "weight": 61.5,
+        "bmi": 19.8
+      },
+      "options": {
+        "difficulty": "중",
+        "duration_min": 15
+      },
+      "expected": {
+        "intensity_level": "저강도",
+        "keywords": ["가벼운", "스트레칭", "휴식", "주의"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED025",
+      "type": "exercise_recommendation",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 83,
+        "resting_heart_rate": 96,
+        "sleep_hr": 8.8,
+        "steps": 3618,
+        "distance_km": 2.2,
+        "active_calories": 678,
+        "oxygen_saturation": 94,
+        "weight": 77.2,
+        "bmi": 19.4
+      },
+      "options": {
+        "difficulty": "상",
+        "duration_min": 15
+      },
+      "expected": {
+        "intensity_level": "저강도",
+        "keywords": ["가벼운", "스트레칭", "휴식", "주의"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED026",
+      "type": "exercise_recommendation",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 92,
+        "resting_heart_rate": 86,
+        "sleep_hr": 8.5,
+        "steps": 4231,
+        "distance_km": 2.0,
+        "active_calories": 719,
+        "oxygen_saturation": 93,
+        "weight": 65.1,
+        "bmi": 22.5
+      },
+      "options": {
+        "difficulty": "상",
+        "duration_min": 15
+      },
+      "expected": {
+        "intensity_level": "저강도",
+        "keywords": ["가벼운", "스트레칭", "휴식", "주의"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED027",
+      "type": "exercise_recommendation",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 93,
+        "resting_heart_rate": 93,
+        "sleep_hr": 8.0,
+        "steps": 4829,
+        "distance_km": 2.5,
+        "active_calories": 675,
+        "oxygen_saturation": 93,
+        "weight": 82.1,
+        "bmi": 19.9
+      },
+      "options": {
+        "difficulty": "상",
+        "duration_min": 30
+      },
+      "expected": {
+        "intensity_level": "저강도",
+        "keywords": ["가벼운", "스트레칭", "휴식", "주의"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED028",
+      "type": "exercise_recommendation",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 104,
+        "resting_heart_rate": 82,
+        "sleep_hr": 6.8,
+        "steps": 5894,
+        "distance_km": 4.3,
+        "active_calories": 222,
+        "oxygen_saturation": 94,
+        "weight": 73.9,
+        "bmi": 25.5
+      },
+      "options": {
+        "difficulty": "하",
+        "duration_min": 20
+      },
+      "expected": {
+        "intensity_level": "저강도",
+        "keywords": ["가벼운", "스트레칭", "휴식", "주의"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED029",
+      "type": "exercise_recommendation",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 102,
+        "resting_heart_rate": 73,
+        "sleep_hr": 6.7,
+        "steps": 5192,
+        "distance_km": 3.2,
+        "active_calories": 234,
+        "oxygen_saturation": 94,
+        "weight": 94.6,
+        "bmi": 29.7
+      },
+      "options": {
+        "difficulty": "상",
+        "duration_min": 30
+      },
+      "expected": {
+        "intensity_level": "저강도",
+        "keywords": ["가벼운", "스트레칭", "휴식", "주의"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    },
+    {
+      "id": "ED030",
+      "type": "exercise_recommendation",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 93,
+        "resting_heart_rate": 73,
+        "sleep_hr": 6.2,
+        "steps": 12582,
+        "distance_km": 10.5,
+        "active_calories": 773,
+        "oxygen_saturation": 93,
+        "weight": 76.9,
+        "bmi": 27.0
+      },
+      "options": {
+        "difficulty": "중",
+        "duration_min": 15
+      },
+      "expected": {
+        "intensity_level": "저강도",
+        "keywords": ["가벼운", "스트레칭", "휴식", "주의"],
+        "has_warmup": true,
+        "has_cooldown": true
+      }
+    }
+  ]
+}

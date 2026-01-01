@@ -1,0 +1,634 @@
+{
+  "test_cases": [
+    {
+      "id": "HD001",
+      "type": "health_analysis",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 113,
+        "resting_heart_rate": 86,
+        "sleep_hr": 4.7,
+        "steps": 1570,
+        "distance_km": 0.8,
+        "active_calories": 84,
+        "oxygen_saturation": 92,
+        "weight": 63.6,
+        "bmi": 32.7
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    },
+    {
+      "id": "HD002",
+      "type": "health_analysis",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 84,
+        "resting_heart_rate": 69,
+        "sleep_hr": 7.5,
+        "steps": 9607,
+        "distance_km": 5.2,
+        "active_calories": 359,
+        "oxygen_saturation": 96,
+        "weight": 79.7,
+        "bmi": 19.7
+      },
+      "expected": {
+        "condition_level": "optimal",
+        "keywords": ["양호", "충분", "정상", "좋은"],
+        "exercise_recommendation": "고강도 가능"
+      }
+    },
+    {
+      "id": "HD003",
+      "type": "health_analysis",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 115,
+        "resting_heart_rate": 98,
+        "sleep_hr": 4.1,
+        "steps": 1972,
+        "distance_km": 1.4,
+        "active_calories": 69,
+        "oxygen_saturation": 92,
+        "weight": 86.2,
+        "bmi": 32.8
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    },
+    {
+      "id": "HD004",
+      "type": "health_analysis",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 99,
+        "resting_heart_rate": 67,
+        "sleep_hr": 7.0,
+        "steps": 8148,
+        "distance_km": 7.2,
+        "active_calories": 322,
+        "oxygen_saturation": 97,
+        "weight": 88.0,
+        "bmi": 24.3
+      },
+      "expected": {
+        "condition_level": "optimal",
+        "keywords": ["양호", "충분", "정상", "좋은"],
+        "exercise_recommendation": "고강도 가능"
+      }
+    },
+    {
+      "id": "HD005",
+      "type": "health_analysis",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 112,
+        "resting_heart_rate": 87,
+        "sleep_hr": 4.3,
+        "steps": 2404,
+        "distance_km": 1.9,
+        "active_calories": 30,
+        "oxygen_saturation": 92,
+        "weight": 94.2,
+        "bmi": 33.1
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    },
+    {
+      "id": "HD006",
+      "type": "health_analysis",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 116,
+        "resting_heart_rate": 95,
+        "sleep_hr": 3.8,
+        "steps": 1401,
+        "distance_km": 1.3,
+        "active_calories": 50,
+        "oxygen_saturation": 90,
+        "weight": 63.1,
+        "bmi": 33.6
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    },
+    {
+      "id": "HD007",
+      "type": "health_analysis",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 125,
+        "resting_heart_rate": 86,
+        "sleep_hr": 3.7,
+        "steps": 1069,
+        "distance_km": 0.6,
+        "active_calories": 89,
+        "oxygen_saturation": 91,
+        "weight": 55.2,
+        "bmi": 30.7
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    },
+    {
+      "id": "HD008",
+      "type": "health_analysis",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 94,
+        "resting_heart_rate": 60,
+        "sleep_hr": 7.9,
+        "steps": 9611,
+        "distance_km": 5.2,
+        "active_calories": 430,
+        "oxygen_saturation": 95,
+        "weight": 54.9,
+        "bmi": 20.9
+      },
+      "expected": {
+        "condition_level": "optimal",
+        "keywords": ["양호", "충분", "정상", "좋은"],
+        "exercise_recommendation": "고강도 가능"
+      }
+    },
+    {
+      "id": "HD009",
+      "type": "health_analysis",
+      "difficulty": "easy",
+      "input_data": {
+        "heart_rate": 72,
+        "resting_heart_rate": 62,
+        "sleep_hr": 7.9,
+        "steps": 7740,
+        "distance_km": 8.0,
+        "active_calories": 455,
+        "oxygen_saturation": 99,
+        "weight": 83.0,
+        "bmi": 19.4
+      },
+      "expected": {
+        "condition_level": "optimal",
+        "keywords": ["양호", "충분", "정상", "좋은"],
+        "exercise_recommendation": "고강도 가능"
+      }
+    },
+    {
+      "id": "HD010",
+      "type": "health_analysis",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 65,
+        "resting_heart_rate": 64,
+        "sleep_hr": 7.4,
+        "steps": 9997,
+        "distance_km": 5.8,
+        "active_calories": 302,
+        "oxygen_saturation": 99,
+        "weight": 58.1,
+        "bmi": 26.8
+      },
+      "expected": {
+        "condition_level": "good",
+        "keywords": ["주의", "부족", "권장"],
+        "exercise_recommendation": "중강도 권장"
+      }
+    },
+    {
+      "id": "HD011",
+      "type": "health_analysis",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 98,
+        "resting_heart_rate": 64,
+        "sleep_hr": 7.9,
+        "steps": 5383,
+        "distance_km": 7.8,
+        "active_calories": 375,
+        "oxygen_saturation": 95,
+        "weight": 82.9,
+        "bmi": 19.1
+      },
+      "expected": {
+        "condition_level": "optimal",
+        "keywords": ["양호", "충분", "정상", "좋은"],
+        "exercise_recommendation": "고강도 가능"
+      }
+    },
+    {
+      "id": "HD012",
+      "type": "health_analysis",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 66,
+        "resting_heart_rate": 62,
+        "sleep_hr": 7.7,
+        "steps": 6369,
+        "distance_km": 5.7,
+        "active_calories": 348,
+        "oxygen_saturation": 99,
+        "weight": 66.5,
+        "bmi": 21.9
+      },
+      "expected": {
+        "condition_level": "optimal",
+        "keywords": ["양호", "충분", "정상", "좋은"],
+        "exercise_recommendation": "고강도 가능"
+      }
+    },
+    {
+      "id": "HD013",
+      "type": "health_analysis",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 74,
+        "resting_heart_rate": 67,
+        "sleep_hr": 6.9,
+        "steps": 7500,
+        "distance_km": 6.1,
+        "active_calories": 324,
+        "oxygen_saturation": 95,
+        "weight": 56.9,
+        "bmi": 23.2
+      },
+      "expected": {
+        "condition_level": "good",
+        "keywords": ["주의", "부족", "권장"],
+        "exercise_recommendation": "중강도 권장"
+      }
+    },
+    {
+      "id": "HD014",
+      "type": "health_analysis",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 89,
+        "resting_heart_rate": 84,
+        "sleep_hr": 7.6,
+        "steps": 7960,
+        "distance_km": 6.1,
+        "active_calories": 466,
+        "oxygen_saturation": 99,
+        "weight": 72.2,
+        "bmi": 18.6
+      },
+      "expected": {
+        "condition_level": "good",
+        "keywords": ["주의", "부족", "권장"],
+        "exercise_recommendation": "중강도 권장"
+      }
+    },
+    {
+      "id": "HD015",
+      "type": "health_analysis",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 77,
+        "resting_heart_rate": 65,
+        "sleep_hr": 7.2,
+        "steps": 6709,
+        "distance_km": 7.0,
+        "active_calories": 473,
+        "oxygen_saturation": 93,
+        "weight": 92.9,
+        "bmi": 20.4
+      },
+      "expected": {
+        "condition_level": "good",
+        "keywords": ["주의", "부족", "권장"],
+        "exercise_recommendation": "중강도 권장"
+      }
+    },
+    {
+      "id": "HD016",
+      "type": "health_analysis",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 74,
+        "resting_heart_rate": 65,
+        "sleep_hr": 7.5,
+        "steps": 7033,
+        "distance_km": 6.7,
+        "active_calories": 365,
+        "oxygen_saturation": 94,
+        "weight": 89.6,
+        "bmi": 25.3
+      },
+      "expected": {
+        "condition_level": "good",
+        "keywords": ["주의", "부족", "권장"],
+        "exercise_recommendation": "중강도 권장"
+      }
+    },
+    {
+      "id": "HD017",
+      "type": "health_analysis",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 74,
+        "resting_heart_rate": 73,
+        "sleep_hr": 7.4,
+        "steps": 9761,
+        "distance_km": 6.2,
+        "active_calories": 464,
+        "oxygen_saturation": 93,
+        "weight": 66.3,
+        "bmi": 23.2
+      },
+      "expected": {
+        "condition_level": "good",
+        "keywords": ["주의", "부족", "권장"],
+        "exercise_recommendation": "중강도 권장"
+      }
+    },
+    {
+      "id": "HD018",
+      "type": "health_analysis",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 77,
+        "resting_heart_rate": 67,
+        "sleep_hr": 7.2,
+        "steps": 5750,
+        "distance_km": 7.7,
+        "active_calories": 439,
+        "oxygen_saturation": 98,
+        "weight": 82.8,
+        "bmi": 24.6
+      },
+      "expected": {
+        "condition_level": "optimal",
+        "keywords": ["양호", "충분", "정상", "좋은"],
+        "exercise_recommendation": "고강도 가능"
+      }
+    },
+    {
+      "id": "HD019",
+      "type": "health_analysis",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 81,
+        "resting_heart_rate": 67,
+        "sleep_hr": 7.6,
+        "steps": 7354,
+        "distance_km": 7.8,
+        "active_calories": 350,
+        "oxygen_saturation": 93,
+        "weight": 74.9,
+        "bmi": 24.2
+      },
+      "expected": {
+        "condition_level": "good",
+        "keywords": ["주의", "부족", "권장"],
+        "exercise_recommendation": "중강도 권장"
+      }
+    },
+    {
+      "id": "HD020",
+      "type": "health_analysis",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 82,
+        "resting_heart_rate": 65,
+        "sleep_hr": 7.1,
+        "steps": 6471,
+        "distance_km": 7.8,
+        "active_calories": 382,
+        "oxygen_saturation": 98,
+        "weight": 80.1,
+        "bmi": 19.8
+      },
+      "expected": {
+        "condition_level": "optimal",
+        "keywords": ["양호", "충분", "정상", "좋은"],
+        "exercise_recommendation": "고강도 가능"
+      }
+    },
+    {
+      "id": "HD021",
+      "type": "health_analysis",
+      "difficulty": "medium",
+      "input_data": {
+        "heart_rate": 67,
+        "resting_heart_rate": 78,
+        "sleep_hr": 7.3,
+        "steps": 9466,
+        "distance_km": 6.0,
+        "active_calories": 406,
+        "oxygen_saturation": 99,
+        "weight": 61.1,
+        "bmi": 24.4
+      },
+      "expected": {
+        "condition_level": "good",
+        "keywords": ["주의", "부족", "권장"],
+        "exercise_recommendation": "중강도 권장"
+      }
+    },
+    {
+      "id": "HD022",
+      "type": "health_analysis",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 106,
+        "resting_heart_rate": 75,
+        "sleep_hr": 6.1,
+        "steps": 6584,
+        "distance_km": 3.7,
+        "active_calories": 201,
+        "oxygen_saturation": 93,
+        "weight": 79.6,
+        "bmi": 26.0
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    },
+    {
+      "id": "HD023",
+      "type": "health_analysis",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 83,
+        "resting_heart_rate": 77,
+        "sleep_hr": 6.3,
+        "steps": 11010,
+        "distance_km": 8.4,
+        "active_calories": 665,
+        "oxygen_saturation": 94,
+        "weight": 66.7,
+        "bmi": 29.3
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    },
+    {
+      "id": "HD024",
+      "type": "health_analysis",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 109,
+        "resting_heart_rate": 76,
+        "sleep_hr": 6.3,
+        "steps": 5727,
+        "distance_km": 3.5,
+        "active_calories": 281,
+        "oxygen_saturation": 94,
+        "weight": 91.7,
+        "bmi": 25.7
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    },
+    {
+      "id": "HD025",
+      "type": "health_analysis",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 109,
+        "resting_heart_rate": 81,
+        "sleep_hr": 6.2,
+        "steps": 6150,
+        "distance_km": 3.1,
+        "active_calories": 221,
+        "oxygen_saturation": 94,
+        "weight": 65.5,
+        "bmi": 26.3
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    },
+    {
+      "id": "HD026",
+      "type": "health_analysis",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 97,
+        "resting_heart_rate": 88,
+        "sleep_hr": 8.6,
+        "steps": 3190,
+        "distance_km": 2.9,
+        "active_calories": 650,
+        "oxygen_saturation": 94,
+        "weight": 88.7,
+        "bmi": 20.8
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    },
+    {
+      "id": "HD027",
+      "type": "health_analysis",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 93,
+        "resting_heart_rate": 70,
+        "sleep_hr": 6.7,
+        "steps": 11367,
+        "distance_km": 10.5,
+        "active_calories": 678,
+        "oxygen_saturation": 94,
+        "weight": 88.2,
+        "bmi": 25.2
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    },
+    {
+      "id": "HD028",
+      "type": "health_analysis",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 69,
+        "resting_heart_rate": 89,
+        "sleep_hr": 8.1,
+        "steps": 4746,
+        "distance_km": 2.7,
+        "active_calories": 616,
+        "oxygen_saturation": 94,
+        "weight": 69.6,
+        "bmi": 23.3
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    },
+    {
+      "id": "HD029",
+      "type": "health_analysis",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 87,
+        "resting_heart_rate": 76,
+        "sleep_hr": 6.0,
+        "steps": 13556,
+        "distance_km": 12.0,
+        "active_calories": 557,
+        "oxygen_saturation": 93,
+        "weight": 51.7,
+        "bmi": 25.1
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    },
+    {
+      "id": "HD030",
+      "type": "health_analysis",
+      "difficulty": "hard",
+      "input_data": {
+        "heart_rate": 63,
+        "resting_heart_rate": 91,
+        "sleep_hr": 8.1,
+        "steps": 3051,
+        "distance_km": 2.8,
+        "active_calories": 698,
+        "oxygen_saturation": 94,
+        "weight": 71.7,
+        "bmi": 19.0
+      },
+      "expected": {
+        "condition_level": "warning",
+        "keywords": ["위험", "경고", "휴식", "피로"],
+        "exercise_recommendation": "저강도 또는 휴식"
+      }
+    }
+  ]
+}

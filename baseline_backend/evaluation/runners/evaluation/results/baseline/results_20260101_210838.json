@@ -1,0 +1,19 @@
+{
+  "metadata": {
+    "stage": "baseline",
+    "timestamp": "2026-01-01T21:08:38.122773",
+    "api_base_url": "http://localhost:8001",
+    "evaluation_rounds": 3
+  },
+  "summary": {
+    "timestamp": "2026-01-01T21:08:38.120775",
+    "stage": "baseline",
+    "total_queries": 0,
+    "by_service": {}
+  },
+  "results": {
+    "health": [],
+    "exercise": [],
+    "chat": []
+  }
+}

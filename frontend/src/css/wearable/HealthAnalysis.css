@@ -1,0 +1,172 @@
+/* ============================================
+   HealthAnalysis Styles
+   ============================================ */
+
+.analysis-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  border: 1px solid var(--gray-200);
+}
+
+.analysis-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+  color: white;
+  flex-shrink: 0;
+}
+
+.analysis-card-header.exercise-header {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+}
+
+.analysis-icon {
+  font-size: 22px;
+}
+
+.analysis-card-header h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.analysis-card-body {
+  flex: 1;
+  padding: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.analysis-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-height: 0;
+}
+
+/* 로딩 상태 */
+.analysis-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 12px;
+  color: var(--gray-500);
+}
+
+.loading-spinner {
+  width: 36px;
+  height: 36px;
+  border: 3px solid var(--gray-200);
+  border-top-color: var(--primary);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* 빈 상태 */
+.analysis-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: var(--gray-400);
+}
+
+.empty-icon {
+  font-size: 48px;
+  margin-bottom: 12px;
+  opacity: 0.5;
+}
+
+.analysis-empty p {
+  margin: 1px 0;
+  font-size: 14px;
+}
+
+/* 건강 지표 */
+.health-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+  margin-bottom: 12px;
+}
+
+.metric-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 5px;
+  /* background: var(--gray-50); */
+  background: rgb(175, 220, 247);
+  border-radius: var(--radius);
+  border: 1px solid var(--gray-200);
+}
+
+.metric-icon {
+  font-size: 20px;
+}
+
+.metric-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.metric-label {
+  font-size: 11px;
+  color: var(--gray-500);
+  text-transform: uppercase;
+}
+
+.metric-value {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--gray-800);
+}
+
+/* AI 분석 */
+.ai-analysis {
+  flex: 1;
+  padding: 14px;
+  overflow-y: auto;
+  min-height: 0;
+  background: var(--primary-light);
+  border-radius: var(--radius);
+  border-left: 4px solid var(--primary);
+}
+
+.ai-analysis h4 {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--primary);
+  margin: 0 0 10px 0;
+}
+
+.analysis-text {
+  font-size: 13px;
+  color: var(--gray-700);
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  margin: 0;
+  font-family: inherit;
+}

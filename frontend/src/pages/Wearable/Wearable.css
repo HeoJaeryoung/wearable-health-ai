@@ -1,0 +1,122 @@
+/* ============================================
+   Wearable Page Styles
+   세로 비율: 데이터 전송(1) : 분석/챗봇(9)
+   ============================================ */
+
+.wearable-page {
+  min-height: 100vh;
+  background: var(--gray-100);
+  display: flex;
+  flex-direction: column;
+}
+
+.wearable-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
+
+.wearable-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* ============================================
+   섹션 1: 데이터 전송 영역 (비율 1)
+   디자인 개선 - 그라데이션 + 그림자
+   ============================================ */
+.section-upload {
+  flex: 1;
+  background: linear-gradient(145deg, #ffffff 0%, #f1f5f9 100%);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  /* padding: 0 0 0px 0; */
+  border: 1px solid #cbd5e1;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: white; /* ← 변경 */
+  margin: 0; /* ← 변경 */
+  padding: 15px 20px; /* ← 변경 */
+  background: linear-gradient(10deg, #444444 0%, black 100%); /* ← 추가 */
+  border-radius: var(--radius);
+}
+
+.upload-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.upload-divider {
+  width: 2px;
+  background: linear-gradient(rgb(208, 208, 208));
+  align-self: stretch;
+}
+
+/* ============================================
+   섹션 2: 분석/챗봇 영역 (비율 9)
+   ============================================ */
+.section-analysis {
+  flex: 9;
+}
+
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  height: 100%;
+}
+
+/* ============================================
+   반응형
+   ============================================ */
+@media (max-width: 1024px) {
+  .analysis-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .upload-wrapper {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .upload-divider {
+    width: 80%;
+    height: 2px;
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(148, 163, 184, 0.5) 50%,
+      transparent 100%
+    );
+  }
+}
+
+@media (max-width: 768px) {
+  .analysis-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wearable-main {
+    padding: 16px;
+  }
+
+  .section-upload {
+    padding: 15px;
+  }
+}

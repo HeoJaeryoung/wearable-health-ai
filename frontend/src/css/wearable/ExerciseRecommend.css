@@ -1,0 +1,108 @@
+/* ============================================
+   ExerciseRecommend Styles
+   ============================================ */
+
+.routine-content {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 운동 요약 (강도, 시간, 칼로리) */
+.routine-summary {
+  display: flex;
+  gap: 20px;
+  height: 43px;
+  margin-bottom: 16px;
+  padding-bottom: 1px;
+  border-bottom: 1px solid var(--gray-200);
+  flex-shrink: 0;
+}
+
+.summary-item {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 30px;
+  /* background: var(--gray-50); */
+  background: rgb(188, 229, 148);
+  border-radius: var(--radius);
+  border: 1px solid var(--gray-200);
+}
+
+.summary-icon {
+  font-size: 16px;
+}
+
+.summary-value {
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--gray-800);
+}
+
+/* 운동 목록 */
+.routine-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.routine-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: var(--gray-50);
+  border-radius: var(--radius);
+  border: 1px solid var(--gray-200);
+  flex-shrink: 0;
+}
+
+.routine-item:hover {
+  background: var(--gray-100);
+}
+
+.routine-number {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #10b981;
+  color: white;
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.routine-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.routine-name {
+  font-weight: 500;
+  color: var(--gray-800);
+  font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.routine-detail {
+  font-size: 11px;
+  color: var(--gray-500);
+}
+
+.routine-calories {
+  font-size: 12px;
+  color: var(--warning);
+  font-weight: 500;
+  flex-shrink: 0;
+}

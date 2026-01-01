@@ -1,0 +1,106 @@
+# ============================================
+# Environment & Secrets
+# ============================================
+.env
+.env.local
+.env.development
+.env.production
+*.env
+
+# ============================================
+# Python
+# ============================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+ENV/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# ============================================
+# Node.js / React / React Native
+# ============================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.yarn-integrity
+
+# ============================================
+# React Native / Expo
+# ============================================
+.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Android
+android/.gradle/
+android/app/build/
+android/build/
+android/local.properties
+
+# iOS
+ios/Pods/
+ios/build/
+*.xcworkspace
+*.xcuserdata
+
+# ============================================
+# IDE & Editors
+# ============================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ============================================
+# Data & Storage (로컬 전용)
+# ============================================
+# ChromaDB 데이터
+baseline_backend/chroma_data/
+
+# 업로드된 ZIP 파일
+baseline_backend/zip_data/
+
+# 로그 파일
+*.log
+logs/
+
+# ============================================
+# Build & Cache
+# ============================================
+*.cache
+.cache/
+coverage/
+.nyc_output/
+
+# ============================================
+# Testing
+# ============================================
+.pytest_cache/
+htmlcov/
+.coverage
+*.cover
+
+# ============================================
+# Misc
+# ============================================
+*.bak
+*.tmp
+*.temp

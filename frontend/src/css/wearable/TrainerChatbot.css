@@ -1,0 +1,253 @@
+/* ============================================
+   TrainerChatbot Styles
+   ============================================ */
+
+.chatbot-card {
+  background: white;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  border: 1px solid var(--gray-200);
+}
+
+.chatbot-card:hover {
+  box-shadow: var(--shadow-lg);
+}
+
+.chatbot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 20px;
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  color: white;
+  flex-shrink: 0;
+}
+
+.chatbot-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.chatbot-icon {
+  font-size: 22px;
+}
+
+.chatbot-title h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* 캐릭터 선택 */
+.character-selector {
+  display: flex;
+  gap: 6px;
+}
+
+/* 고정형 질의 버튼 */
+.quick-questions {
+  display: flex;
+  gap: 15px;
+  padding: 15px 18px;
+  background: var(--gray-100);
+  border-bottom: 1px solid var(--gray-200);
+  flex-wrap: wrap;
+  flex-shrink: 0;
+}
+
+.quick-btn {
+  padding: 9px 12px;
+  background: rgb(235, 182, 69);
+  color: var(--gray-700);
+  border: 1px solid var(--gray-300);
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+}
+
+.quick-btn:hover:not(:disabled) {
+  background: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+.quick-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.character-btn {
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  font-size: 16px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.character-btn:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.character-btn.active {
+  background: white;
+  border-color: white;
+}
+
+/* 메시지 영역 */
+.chatbot-messages {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background: var(--gray-50);
+}
+
+.message {
+  display: flex;
+  gap: 10px;
+  max-width: 85%;
+}
+
+.message.user {
+  align-self: flex-end;
+  flex-direction: row-reverse;
+}
+
+.message.assistant {
+  align-self: flex-start;
+}
+
+.message-avatar {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border-radius: 50%;
+  font-size: 20px;
+  box-shadow: var(--shadow);
+  flex-shrink: 0;
+}
+
+.message-content {
+  padding: 12px 16px;
+  border-radius: var(--radius-md);
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.message.user .message-content {
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  color: rgb(242, 242, 242);
+  border-bottom-right-radius: 4px;
+}
+
+.message.assistant .message-content {
+  background: rgb(242, 242, 242);
+  color: var(--gray-800);
+  border-bottom-left-radius: 4px;
+  box-shadow: var(--shadow);
+}
+
+.message.error .message-content {
+  background: #fef2f2;
+  color: var(--error);
+}
+
+/* 타이핑 애니메이션 */
+.message-content.typing {
+  display: flex;
+  gap: 4px;
+  padding: 16px 20px;
+}
+
+.message-content.typing span {
+  width: 8px;
+  height: 8px;
+  background: var(--gray-400);
+  border-radius: 50%;
+  animation: typing 1.4s infinite ease-in-out;
+}
+
+.message-content.typing span:nth-child(1) {
+  animation-delay: 0s;
+}
+.message-content.typing span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.message-content.typing span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes typing {
+  0%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+  30% {
+    transform: translateY(-8px);
+  }
+}
+
+/* 입력 영역 */
+.chatbot-input {
+  display: flex;
+  gap: 10px;
+  padding: 14px 16px;
+  border-top: 1px solid var(--gray-200);
+  background: white;
+  flex-shrink: 0;
+}
+
+.chatbot-input input {
+  flex: 1;
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius);
+}
+
+.chatbot-input input:focus {
+  outline: none;
+  border-color: var(--primary);
+}
+
+.send-btn {
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #dc2626 0%, #b91c1c 100%);
+  color: white;
+  border: none;
+  border-radius: var(--radius);
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.send-btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.send-btn:disabled {
+  background: var(--gray-300);
+  cursor: not-allowed;
+}

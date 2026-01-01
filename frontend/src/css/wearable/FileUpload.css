@@ -1,0 +1,107 @@
+/* ============================================
+   FileUpload Styles
+   ============================================ */
+
+.upload-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 5px;
+}
+
+.upload-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--gray-700);
+  margin: 0;
+}
+
+/* 한 줄 배치 */
+.upload-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+/* 운동 옵션 선택 */
+.option-group {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.option-label {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--gray-600);
+  white-space: nowrap;
+}
+
+.option-select {
+  padding: 6px 10px;
+  border: 1px solid var(--gray-300);
+  border-radius: var(--radius);
+  font-size: 14px;
+  color: var(--gray-700);
+  background: rgb(229, 229, 229);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.option-select:hover {
+  border-color: var(--primary);
+}
+
+.option-select:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
+}
+
+/* 버튼 */
+.btn-select-file {
+  padding: 8px 16px;
+  background: #c92204;
+  color: white;
+  border: 1px solid #1f2937;
+  border-radius: var(--radius);
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+  white-space: nowrap;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btn-select-file:hover {
+  background: #374151;
+  border-color: #374151;
+}
+
+.btn-analyze {
+  padding: 8px 16px;
+  font-size: 15px;
+}
+
+.upload-message {
+  padding: 6px 12px;
+  border-radius: var(--radius);
+  font-size: 12px;
+  text-align: center;
+}
+
+.upload-message.error {
+  background: #fef2f2;
+  color: var(--error);
+}
+
+.upload-message.success {
+  background: #f0fdf4;
+  color: var(--success);
+}

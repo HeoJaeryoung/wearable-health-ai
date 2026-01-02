@@ -217,6 +217,17 @@ wearable-health-ai/
 
 ---
 
+## 📈 테스트 데이터 생성 및 테스트 실행
+
+1. 테스트 데이터 생성하기
+- 경로: 백엔드 폴더 내
+- 백엔드 서버 켜기
+- backend> python evaluation/scripts/generate_test_datasets.py
+
+2. 테스트 하기
+- backend> python -m evaluation.run_evaluation --stage baseline
+- backend> python -m evaluation.run_evaluation --stage langchain
+
 ## 👤 개발자
 
 - **재령** - AI 시스템 개발

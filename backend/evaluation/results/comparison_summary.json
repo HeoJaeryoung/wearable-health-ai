@@ -1,0 +1,22 @@
+{
+  "정확도 (%)": {
+    "baseline": 49.87,
+    "langchain": 50.22
+  },
+  "응답 시간 (초)": {
+    "baseline": 10.3672,
+    "langchain": 10.4641
+  },
+  "구조 점수 (%)": {
+    "baseline": 9.83,
+    "langchain": 8.55
+  },
+  "논문 인용율 (%)": {
+    "baseline": 19.23,
+    "langchain": 19.23
+  },
+  "개념 적용율 (%)": {
+    "baseline": 28.53,
+    "langchain": 28.53
+  }
+}

@@ -1,0 +1,6926 @@
+{
+  "metadata": {
+    "generated_at": "2026-01-02T21:46:51.204975",
+    "version": "2.0",
+    "description": "3단계 평가용 테스트 데이터 (Baseline/LangChain/Fine-tuned)",
+    "total_count": 100,
+    "biometric_count": 60,
+    "chat_count": 40
+  },
+  "biometric_test_cases": [
+    {
+      "id": "BIO045",
+      "type": "biometric",
+      "scenario": "caution",
+      "input_data": {
+        "age": 30,
+        "gender": "남성",
+        "heart_rate": 99,
+        "resting_heart_rate": 81,
+        "usual_resting_heart_rate": 68,
+        "sleep_hr": 5.4,
+        "steps": 3812,
+        "distance_km": 2.93,
+        "active_calories": 125,
+        "oxygen_saturation": 94,
+        "weight": 77,
+        "bmi": 24.3
+      },
+      "routine": {
+        "duration_min": 15,
+        "items": [
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "caution",
+        "expected_score_range": [
+          30,
+          50
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "저강도만 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "caution",
+        "recommended_intensity": "저-중강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 130,
+        "expected_target_hr_high": 146,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO024",
+      "type": "biometric",
+      "scenario": "moderate_plus",
+      "input_data": {
+        "age": 26,
+        "gender": "남성",
+        "heart_rate": 90,
+        "resting_heart_rate": 75,
+        "usual_resting_heart_rate": 66,
+        "sleep_hr": 6.9,
+        "steps": 6061,
+        "distance_km": 4.66,
+        "active_calories": 312,
+        "oxygen_saturation": 96,
+        "weight": 67,
+        "bmi": 24.3
+      },
+      "routine": {
+        "duration_min": 45,
+        "items": [
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 9
+          },
+          {
+            "name": "push up",
+            "name_kr": "푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 4,
+            "met": 6.0,
+            "duration_min": 9
+          },
+          {
+            "name": "step forward dynamic lunge",
+            "name_kr": "스텝 포워드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 9
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 9
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          70,
+          90
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 164,
+        "expected_target_hr_high": 182,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO053",
+      "type": "biometric",
+      "scenario": "warning",
+      "input_data": {
+        "age": 33,
+        "gender": "남성",
+        "heart_rate": 100,
+        "resting_heart_rate": 81,
+        "usual_resting_heart_rate": 64,
+        "sleep_hr": 3.2,
+        "steps": 1437,
+        "distance_km": 1.11,
+        "active_calories": 104,
+        "oxygen_saturation": 93,
+        "weight": 93,
+        "bmi": 32.7
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 7
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 7
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 7
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "warning",
+        "expected_score_range": [
+          5,
+          25
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "휴식 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "warning",
+        "recommended_intensity": "저강도/휴식",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 123,
+        "expected_target_hr_high": 139,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO012",
+      "type": "biometric",
+      "scenario": "good",
+      "input_data": {
+        "age": 50,
+        "gender": "여성",
+        "heart_rate": 86,
+        "resting_heart_rate": 75,
+        "usual_resting_heart_rate": 70,
+        "sleep_hr": 7.8,
+        "steps": 8639,
+        "distance_km": 6.65,
+        "active_calories": 347,
+        "oxygen_saturation": 96,
+        "weight": 73,
+        "bmi": 24.7
+      },
+      "routine": {
+        "duration_min": 15,
+        "items": [
+          {
+            "name": "burpee test",
+            "name_kr": "버피 테스트",
+            "category": [
+              4
+            ],
+            "difficulty": 5,
+            "met": 8.0,
+            "duration_min": 5
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 5
+          },
+          {
+            "name": "step forward dynamic lunge",
+            "name_kr": "스텝 포워드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          80,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 146,
+        "expected_target_hr_high": 160,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO017",
+      "type": "biometric",
+      "scenario": "moderate_plus",
+      "input_data": {
+        "age": 35,
+        "gender": "여성",
+        "heart_rate": 94,
+        "resting_heart_rate": 74,
+        "usual_resting_heart_rate": 66,
+        "sleep_hr": 6.9,
+        "steps": 7124,
+        "distance_km": 5.48,
+        "active_calories": 253,
+        "oxygen_saturation": 97,
+        "weight": 71,
+        "bmi": 23.7
+      },
+      "routine": {
+        "duration_min": 45,
+        "items": [
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "lying leg raise",
+            "name_kr": "라잉 레그 레이즈",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 9
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 9
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 9
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          70,
+          90
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 157,
+        "expected_target_hr_high": 174,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO021",
+      "type": "biometric",
+      "scenario": "moderate_plus",
+      "input_data": {
+        "age": 34,
+        "gender": "여성",
+        "heart_rate": 87,
+        "resting_heart_rate": 71,
+        "usual_resting_heart_rate": 66,
+        "sleep_hr": 6.0,
+        "steps": 6039,
+        "distance_km": 4.65,
+        "active_calories": 248,
+        "oxygen_saturation": 95,
+        "weight": 81,
+        "bmi": 31.5
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 7
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 7
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 7
+          },
+          {
+            "name": "lying leg raise",
+            "name_kr": "라잉 레그 레이즈",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          70,
+          90
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 157,
+        "expected_target_hr_high": 174,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO054",
+      "type": "biometric",
+      "scenario": "warning",
+      "input_data": {
+        "age": 43,
+        "gender": "남성",
+        "heart_rate": 86,
+        "resting_heart_rate": 80,
+        "usual_resting_heart_rate": 61,
+        "sleep_hr": 3.5,
+        "steps": 1202,
+        "distance_km": 0.92,
+        "active_calories": 95,
+        "oxygen_saturation": 92,
+        "weight": 87,
+        "bmi": 31.0
+      },
+      "routine": {
+        "duration_min": 15,
+        "items": [
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "warning",
+        "expected_score_range": [
+          0,
+          15
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "휴식 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "warning",
+        "recommended_intensity": "저강도/휴식",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 119,
+        "expected_target_hr_high": 133,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO057",
+      "type": "biometric",
+      "scenario": "warning",
+      "input_data": {
+        "age": 30,
+        "gender": "여성",
+        "heart_rate": 97,
+        "resting_heart_rate": 87,
+        "usual_resting_heart_rate": 69,
+        "sleep_hr": 3.9,
+        "steps": 2142,
+        "distance_km": 1.65,
+        "active_calories": 139,
+        "oxygen_saturation": 93,
+        "weight": 87,
+        "bmi": 35.3
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "warning",
+        "expected_score_range": [
+          5,
+          25
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "휴식 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "warning",
+        "recommended_intensity": "저강도/휴식",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 128,
+        "expected_target_hr_high": 144,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO034",
+      "type": "biometric",
+      "scenario": "moderate",
+      "input_data": {
+        "age": 32,
+        "gender": "남성",
+        "heart_rate": 79,
+        "resting_heart_rate": 67,
+        "usual_resting_heart_rate": 58,
+        "sleep_hr": 6.0,
+        "steps": 4660,
+        "distance_km": 3.58,
+        "active_calories": 223,
+        "oxygen_saturation": 97,
+        "weight": 77,
+        "bmi": 26.1
+      },
+      "routine": {
+        "duration_min": 45,
+        "items": [
+          {
+            "name": "step forward dynamic lunge",
+            "name_kr": "스텝 포워드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "scissor cross",
+            "name_kr": "시저 크로스",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 9
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 9
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 9
+          },
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 9
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "good",
+        "expected_score_range": [
+          60,
+          80
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "중-고강도 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "good",
+        "recommended_intensity": "중-고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 146,
+        "expected_target_hr_high": 164,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO020",
+      "type": "biometric",
+      "scenario": "moderate_plus",
+      "input_data": {
+        "age": 41,
+        "gender": "여성",
+        "heart_rate": 81,
+        "resting_heart_rate": 68,
+        "usual_resting_heart_rate": 61,
+        "sleep_hr": 6.4,
+        "steps": 6884,
+        "distance_km": 5.3,
+        "active_calories": 247,
+        "oxygen_saturation": 96,
+        "weight": 78,
+        "bmi": 26.5
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "push up",
+            "name_kr": "푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 4,
+            "met": 6.0,
+            "duration_min": 5
+          },
+          {
+            "name": "lying leg raise",
+            "name_kr": "라잉 레그 레이즈",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "scissor cross",
+            "name_kr": "시저 크로스",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "step forward dynamic lunge",
+            "name_kr": "스텝 포워드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          70,
+          90
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 151,
+        "expected_target_hr_high": 168,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO010",
+      "type": "biometric",
+      "scenario": "good",
+      "input_data": {
+        "age": 49,
+        "gender": "남성",
+        "heart_rate": 84,
+        "resting_heart_rate": 66,
+        "usual_resting_heart_rate": 59,
+        "sleep_hr": 7.2,
+        "steps": 8692,
+        "distance_km": 6.69,
+        "active_calories": 355,
+        "oxygen_saturation": 98,
+        "weight": 85,
+        "bmi": 30.5
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 7
+          },
+          {
+            "name": "push up",
+            "name_kr": "푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 4,
+            "met": 6.0,
+            "duration_min": 7
+          },
+          {
+            "name": "bicycle crunch",
+            "name_kr": "바이시클 크런치",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 7
+          },
+          {
+            "name": "good morning exercise",
+            "name_kr": "굿모닝 엑서사이즈",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          80,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 145,
+        "expected_target_hr_high": 160,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO047",
+      "type": "biometric",
+      "scenario": "caution",
+      "input_data": {
+        "age": 39,
+        "gender": "여성",
+        "heart_rate": 85,
+        "resting_heart_rate": 74,
+        "usual_resting_heart_rate": 60,
+        "sleep_hr": 5.3,
+        "steps": 4040,
+        "distance_km": 3.11,
+        "active_calories": 146,
+        "oxygen_saturation": 94,
+        "weight": 55,
+        "bmi": 20.0
+      },
+      "routine": {
+        "duration_min": 15,
+        "items": [
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "caution",
+        "expected_score_range": [
+          30,
+          50
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "저강도만 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "caution",
+        "recommended_intensity": "저-중강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 122,
+        "expected_target_hr_high": 138,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO032",
+      "type": "biometric",
+      "scenario": "moderate",
+      "input_data": {
+        "age": 33,
+        "gender": "여성",
+        "heart_rate": 90,
+        "resting_heart_rate": 77,
+        "usual_resting_heart_rate": 68,
+        "sleep_hr": 6.2,
+        "steps": 5663,
+        "distance_km": 4.36,
+        "active_calories": 209,
+        "oxygen_saturation": 95,
+        "weight": 84,
+        "bmi": 30.0
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 7
+          },
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 7
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 7
+          },
+          {
+            "name": "lying leg raise",
+            "name_kr": "라잉 레그 레이즈",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          70,
+          90
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 160,
+        "expected_target_hr_high": 176,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO037",
+      "type": "biometric",
+      "scenario": "caution",
+      "input_data": {
+        "age": 28,
+        "gender": "여성",
+        "heart_rate": 96,
+        "resting_heart_rate": 78,
+        "usual_resting_heart_rate": 64,
+        "sleep_hr": 4.8,
+        "steps": 4027,
+        "distance_km": 3.1,
+        "active_calories": 138,
+        "oxygen_saturation": 95,
+        "weight": 67,
+        "bmi": 23.5
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "caution",
+        "expected_score_range": [
+          25,
+          45
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "저강도만 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "caution",
+        "recommended_intensity": "저-중강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 129,
+        "expected_target_hr_high": 146,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO031",
+      "type": "biometric",
+      "scenario": "moderate",
+      "input_data": {
+        "age": 47,
+        "gender": "여성",
+        "heart_rate": 77,
+        "resting_heart_rate": 66,
+        "usual_resting_heart_rate": 59,
+        "sleep_hr": 6.0,
+        "steps": 5863,
+        "distance_km": 4.51,
+        "active_calories": 209,
+        "oxygen_saturation": 96,
+        "weight": 67,
+        "bmi": 23.2
+      },
+      "routine": {
+        "duration_min": 15,
+        "items": [
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "step forward dynamic lunge",
+            "name_kr": "스텝 포워드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          70,
+          90
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 146,
+        "expected_target_hr_high": 162,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO043",
+      "type": "biometric",
+      "scenario": "caution",
+      "input_data": {
+        "age": 40,
+        "gender": "여성",
+        "heart_rate": 102,
+        "resting_heart_rate": 83,
+        "usual_resting_heart_rate": 70,
+        "sleep_hr": 5.4,
+        "steps": 3509,
+        "distance_km": 2.7,
+        "active_calories": 159,
+        "oxygen_saturation": 96,
+        "weight": 77,
+        "bmi": 29.9
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "moderate",
+        "expected_score_range": [
+          35,
+          55
+        ],
+        "keywords": [
+          "보통",
+          "주의"
+        ],
+        "exercise_recommendation": "중강도까지 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "moderate",
+        "recommended_intensity": "중강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 136,
+        "expected_target_hr_high": 151,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO004",
+      "type": "biometric",
+      "scenario": "optimal",
+      "input_data": {
+        "age": 25,
+        "gender": "남성",
+        "heart_rate": 86,
+        "resting_heart_rate": 67,
+        "usual_resting_heart_rate": 63,
+        "sleep_hr": 7.5,
+        "steps": 9246,
+        "distance_km": 7.11,
+        "active_calories": 470,
+        "oxygen_saturation": 98,
+        "weight": 62,
+        "bmi": 20.9
+      },
+      "routine": {
+        "duration_min": 15,
+        "items": [
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "bicycle crunch",
+            "name_kr": "바이시클 크런치",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          90,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 163,
+        "expected_target_hr_high": 182,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO022",
+      "type": "biometric",
+      "scenario": "moderate_plus",
+      "input_data": {
+        "age": 50,
+        "gender": "여성",
+        "heart_rate": 80,
+        "resting_heart_rate": 75,
+        "usual_resting_heart_rate": 68,
+        "sleep_hr": 6.6,
+        "steps": 7392,
+        "distance_km": 5.69,
+        "active_calories": 334,
+        "oxygen_saturation": 95,
+        "weight": 68,
+        "bmi": 26.7
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          70,
+          90
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 146,
+        "expected_target_hr_high": 160,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO049",
+      "type": "biometric",
+      "scenario": "warning",
+      "input_data": {
+        "age": 38,
+        "gender": "여성",
+        "heart_rate": 98,
+        "resting_heart_rate": 81,
+        "usual_resting_heart_rate": 59,
+        "sleep_hr": 4.5,
+        "steps": 1994,
+        "distance_km": 1.53,
+        "active_calories": 107,
+        "oxygen_saturation": 93,
+        "weight": 80,
+        "bmi": 29.2
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "warning",
+        "expected_score_range": [
+          5,
+          25
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "휴식 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "warning",
+        "recommended_intensity": "저강도/휴식",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 121,
+        "expected_target_hr_high": 137,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO005",
+      "type": "biometric",
+      "scenario": "optimal",
+      "input_data": {
+        "age": 53,
+        "gender": "여성",
+        "heart_rate": 81,
+        "resting_heart_rate": 71,
+        "usual_resting_heart_rate": 68,
+        "sleep_hr": 7.7,
+        "steps": 10513,
+        "distance_km": 8.09,
+        "active_calories": 402,
+        "oxygen_saturation": 98,
+        "weight": 75,
+        "bmi": 31.1
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "lying leg raise",
+            "name_kr": "라잉 레그 레이즈",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "scissor cross",
+            "name_kr": "시저 크로스",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          90,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 143,
+        "expected_target_hr_high": 157,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO030",
+      "type": "biometric",
+      "scenario": "moderate",
+      "input_data": {
+        "age": 38,
+        "gender": "남성",
+        "heart_rate": 80,
+        "resting_heart_rate": 73,
+        "usual_resting_heart_rate": 62,
+        "sleep_hr": 5.7,
+        "steps": 4967,
+        "distance_km": 3.82,
+        "active_calories": 199,
+        "oxygen_saturation": 97,
+        "weight": 73,
+        "bmi": 24.3
+      },
+      "routine": {
+        "duration_min": 45,
+        "items": [
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 9
+          },
+          {
+            "name": "lying leg raise",
+            "name_kr": "라잉 레그 레이즈",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "step forward dynamic lunge",
+            "name_kr": "스텝 포워드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "push up",
+            "name_kr": "푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 4,
+            "met": 6.0,
+            "duration_min": 9
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "moderate",
+        "expected_score_range": [
+          35,
+          55
+        ],
+        "keywords": [
+          "보통",
+          "주의"
+        ],
+        "exercise_recommendation": "중강도까지 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "moderate",
+        "recommended_intensity": "중강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 133,
+        "expected_target_hr_high": 149,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO011",
+      "type": "biometric",
+      "scenario": "good",
+      "input_data": {
+        "age": 55,
+        "gender": "여성",
+        "heart_rate": 80,
+        "resting_heart_rate": 65,
+        "usual_resting_heart_rate": 59,
+        "sleep_hr": 7.8,
+        "steps": 8296,
+        "distance_km": 6.38,
+        "active_calories": 255,
+        "oxygen_saturation": 98,
+        "weight": 75,
+        "bmi": 26.4
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          },
+          {
+            "name": "push up",
+            "name_kr": "푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 4,
+            "met": 6.0,
+            "duration_min": 5
+          },
+          {
+            "name": "plank",
+            "name_kr": "플랭크",
+            "category": [
+              4
+            ],
+            "difficulty": 5,
+            "met": 8.0,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          80,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 140,
+        "expected_target_hr_high": 155,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO040",
+      "type": "biometric",
+      "scenario": "caution",
+      "input_data": {
+        "age": 53,
+        "gender": "남성",
+        "heart_rate": 83,
+        "resting_heart_rate": 78,
+        "usual_resting_heart_rate": 67,
+        "sleep_hr": 5.5,
+        "steps": 4367,
+        "distance_km": 3.36,
+        "active_calories": 104,
+        "oxygen_saturation": 94,
+        "weight": 80,
+        "bmi": 27.4
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "caution",
+        "expected_score_range": [
+          30,
+          50
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "저강도만 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "caution",
+        "recommended_intensity": "저-중강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 118,
+        "expected_target_hr_high": 131,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO023",
+      "type": "biometric",
+      "scenario": "moderate_plus",
+      "input_data": {
+        "age": 33,
+        "gender": "남성",
+        "heart_rate": 84,
+        "resting_heart_rate": 72,
+        "usual_resting_heart_rate": 63,
+        "sleep_hr": 6.9,
+        "steps": 5578,
+        "distance_km": 4.29,
+        "active_calories": 235,
+        "oxygen_saturation": 97,
+        "weight": 65,
+        "bmi": 20.8
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "lying leg raise",
+            "name_kr": "라잉 레그 레이즈",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          },
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          70,
+          90
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 158,
+        "expected_target_hr_high": 176,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO058",
+      "type": "biometric",
+      "scenario": "warning",
+      "input_data": {
+        "age": 36,
+        "gender": "여성",
+        "heart_rate": 94,
+        "resting_heart_rate": 83,
+        "usual_resting_heart_rate": 67,
+        "sleep_hr": 4.3,
+        "steps": 2051,
+        "distance_km": 1.58,
+        "active_calories": 124,
+        "oxygen_saturation": 94,
+        "weight": 78,
+        "bmi": 27.9
+      },
+      "routine": {
+        "duration_min": 15,
+        "items": [
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "warning",
+        "expected_score_range": [
+          5,
+          25
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "휴식 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "warning",
+        "recommended_intensity": "저강도/휴식",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 123,
+        "expected_target_hr_high": 139,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO025",
+      "type": "biometric",
+      "scenario": "moderate_plus",
+      "input_data": {
+        "age": 34,
+        "gender": "여성",
+        "heart_rate": 89,
+        "resting_heart_rate": 69,
+        "usual_resting_heart_rate": 60,
+        "sleep_hr": 6.9,
+        "steps": 6753,
+        "distance_km": 5.19,
+        "active_calories": 338,
+        "oxygen_saturation": 96,
+        "weight": 71,
+        "bmi": 27.3
+      },
+      "routine": {
+        "duration_min": 45,
+        "items": [
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 9
+          },
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 9
+          },
+          {
+            "name": "scissor cross",
+            "name_kr": "시저 크로스",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 9
+          },
+          {
+            "name": "push up",
+            "name_kr": "푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 4,
+            "met": 6.0,
+            "duration_min": 9
+          },
+          {
+            "name": "step forward dynamic lunge",
+            "name_kr": "스텝 포워드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 9
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          70,
+          90
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 157,
+        "expected_target_hr_high": 174,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO001",
+      "type": "biometric",
+      "scenario": "optimal",
+      "input_data": {
+        "age": 36,
+        "gender": "남성",
+        "heart_rate": 80,
+        "resting_heart_rate": 62,
+        "usual_resting_heart_rate": 59,
+        "sleep_hr": 7.6,
+        "steps": 10219,
+        "distance_km": 7.86,
+        "active_calories": 400,
+        "oxygen_saturation": 98,
+        "weight": 85,
+        "bmi": 30.5
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "plank",
+            "name_kr": "플랭크",
+            "category": [
+              4
+            ],
+            "difficulty": 5,
+            "met": 8.0,
+            "duration_min": 5
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          },
+          {
+            "name": "side lunge",
+            "name_kr": "사이드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          90,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 154,
+        "expected_target_hr_high": 172,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO050",
+      "type": "biometric",
+      "scenario": "warning",
+      "input_data": {
+        "age": 47,
+        "gender": "남성",
+        "heart_rate": 101,
+        "resting_heart_rate": 82,
+        "usual_resting_heart_rate": 61,
+        "sleep_hr": 3.5,
+        "steps": 1329,
+        "distance_km": 1.02,
+        "active_calories": 117,
+        "oxygen_saturation": 94,
+        "weight": 95,
+        "bmi": 29.7
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 7
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 7
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 7
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "warning",
+        "expected_score_range": [
+          5,
+          25
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "휴식 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "warning",
+        "recommended_intensity": "저강도/휴식",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 118,
+        "expected_target_hr_high": 132,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO026",
+      "type": "biometric",
+      "scenario": "moderate_plus",
+      "input_data": {
+        "age": 33,
+        "gender": "남성",
+        "heart_rate": 81,
+        "resting_heart_rate": 71,
+        "usual_resting_heart_rate": 66,
+        "sleep_hr": 6.6,
+        "steps": 6608,
+        "distance_km": 5.08,
+        "active_calories": 266,
+        "oxygen_saturation": 96,
+        "weight": 78,
+        "bmi": 26.6
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "scissor cross",
+            "name_kr": "시저 크로스",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          70,
+          90
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 158,
+        "expected_target_hr_high": 175,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO051",
+      "type": "biometric",
+      "scenario": "warning",
+      "input_data": {
+        "age": 26,
+        "gender": "남성",
+        "heart_rate": 99,
+        "resting_heart_rate": 79,
+        "usual_resting_heart_rate": 63,
+        "sleep_hr": 3.1,
+        "steps": 2531,
+        "distance_km": 1.95,
+        "active_calories": 116,
+        "oxygen_saturation": 95,
+        "weight": 78,
+        "bmi": 28.3
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "warning",
+        "expected_score_range": [
+          10,
+          30
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "휴식 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "warning",
+        "recommended_intensity": "저강도/휴식",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 125,
+        "expected_target_hr_high": 142,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO019",
+      "type": "biometric",
+      "scenario": "moderate_plus",
+      "input_data": {
+        "age": 34,
+        "gender": "남성",
+        "heart_rate": 87,
+        "resting_heart_rate": 72,
+        "usual_resting_heart_rate": 65,
+        "sleep_hr": 6.6,
+        "steps": 7172,
+        "distance_km": 5.52,
+        "active_calories": 292,
+        "oxygen_saturation": 96,
+        "weight": 89,
+        "bmi": 26.9
+      },
+      "routine": {
+        "duration_min": 15,
+        "items": [
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 5
+          },
+          {
+            "name": "step forward dynamic lunge",
+            "name_kr": "스텝 포워드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          70,
+          90
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 158,
+        "expected_target_hr_high": 175,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO029",
+      "type": "biometric",
+      "scenario": "moderate",
+      "input_data": {
+        "age": 47,
+        "gender": "남성",
+        "heart_rate": 78,
+        "resting_heart_rate": 67,
+        "usual_resting_heart_rate": 58,
+        "sleep_hr": 5.9,
+        "steps": 5325,
+        "distance_km": 4.1,
+        "active_calories": 196,
+        "oxygen_saturation": 95,
+        "weight": 90,
+        "bmi": 30.6
+      },
+      "routine": {
+        "duration_min": 45,
+        "items": [
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 9
+          },
+          {
+            "name": "step forward dynamic lunge",
+            "name_kr": "스텝 포워드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 9
+          },
+          {
+            "name": "push up",
+            "name_kr": "푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 4,
+            "met": 6.0,
+            "duration_min": 9
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 9
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "good",
+        "expected_score_range": [
+          60,
+          80
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "중-고강도 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "good",
+        "recommended_intensity": "중-고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 136,
+        "expected_target_hr_high": 152,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO039",
+      "type": "biometric",
+      "scenario": "caution",
+      "input_data": {
+        "age": 47,
+        "gender": "남성",
+        "heart_rate": 75,
+        "resting_heart_rate": 70,
+        "usual_resting_heart_rate": 60,
+        "sleep_hr": 4.6,
+        "steps": 3460,
+        "distance_km": 2.66,
+        "active_calories": 130,
+        "oxygen_saturation": 95,
+        "weight": 80,
+        "bmi": 26.2
+      },
+      "routine": {
+        "duration_min": 15,
+        "items": [
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "caution",
+        "expected_score_range": [
+          25,
+          45
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "저강도만 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "caution",
+        "recommended_intensity": "저-중강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 116,
+        "expected_target_hr_high": 132,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO027",
+      "type": "biometric",
+      "scenario": "moderate",
+      "input_data": {
+        "age": 28,
+        "gender": "남성",
+        "heart_rate": 77,
+        "resting_heart_rate": 70,
+        "usual_resting_heart_rate": 60,
+        "sleep_hr": 5.8,
+        "steps": 5803,
+        "distance_km": 4.46,
+        "active_calories": 150,
+        "oxygen_saturation": 97,
+        "weight": 88,
+        "bmi": 31.0
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 7
+          },
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 7
+          },
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 7
+          },
+          {
+            "name": "scissor cross",
+            "name_kr": "시저 크로스",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "moderate_plus",
+        "expected_score_range": [
+          45,
+          65
+        ],
+        "keywords": [
+          "보통",
+          "주의"
+        ],
+        "exercise_recommendation": "중강도까지 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "moderate_plus",
+        "recommended_intensity": "중강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 137,
+        "expected_target_hr_high": 155,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO013",
+      "type": "biometric",
+      "scenario": "good",
+      "input_data": {
+        "age": 30,
+        "gender": "남성",
+        "heart_rate": 88,
+        "resting_heart_rate": 75,
+        "usual_resting_heart_rate": 70,
+        "sleep_hr": 7.6,
+        "steps": 8152,
+        "distance_km": 6.27,
+        "active_calories": 295,
+        "oxygen_saturation": 98,
+        "weight": 86,
+        "bmi": 30.4
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "good morning exercise",
+            "name_kr": "굿모닝 엑서사이즈",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 5
+          },
+          {
+            "name": "side lunge",
+            "name_kr": "사이드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          80,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 161,
+        "expected_target_hr_high": 178,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO036",
+      "type": "biometric",
+      "scenario": "moderate",
+      "input_data": {
+        "age": 50,
+        "gender": "여성",
+        "heart_rate": 85,
+        "resting_heart_rate": 76,
+        "usual_resting_heart_rate": 64,
+        "sleep_hr": 5.9,
+        "steps": 5713,
+        "distance_km": 4.39,
+        "active_calories": 168,
+        "oxygen_saturation": 95,
+        "weight": 90,
+        "bmi": 32.6
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 7
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 7
+          },
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 7
+          },
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "moderate_plus",
+        "expected_score_range": [
+          45,
+          65
+        ],
+        "keywords": [
+          "보통",
+          "주의"
+        ],
+        "exercise_recommendation": "중강도까지 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "moderate_plus",
+        "recommended_intensity": "중강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 128,
+        "expected_target_hr_high": 142,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO042",
+      "type": "biometric",
+      "scenario": "caution",
+      "input_data": {
+        "age": 30,
+        "gender": "여성",
+        "heart_rate": 86,
+        "resting_heart_rate": 74,
+        "usual_resting_heart_rate": 59,
+        "sleep_hr": 4.5,
+        "steps": 3786,
+        "distance_km": 2.91,
+        "active_calories": 190,
+        "oxygen_saturation": 95,
+        "weight": 77,
+        "bmi": 29.9
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "warning",
+        "expected_score_range": [
+          15,
+          35
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "휴식 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "warning",
+        "recommended_intensity": "저강도/휴식",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 120,
+        "expected_target_hr_high": 138,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO033",
+      "type": "biometric",
+      "scenario": "moderate",
+      "input_data": {
+        "age": 50,
+        "gender": "여성",
+        "heart_rate": 82,
+        "resting_heart_rate": 75,
+        "usual_resting_heart_rate": 67,
+        "sleep_hr": 5.9,
+        "steps": 5705,
+        "distance_km": 4.39,
+        "active_calories": 268,
+        "oxygen_saturation": 97,
+        "weight": 90,
+        "bmi": 33.5
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 7
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 7
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 7
+          },
+          {
+            "name": "lying leg raise",
+            "name_kr": "라잉 레그 레이즈",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "good",
+        "expected_score_range": [
+          60,
+          80
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "중-고강도 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "good",
+        "recommended_intensity": "중-고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 137,
+        "expected_target_hr_high": 151,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO052",
+      "type": "biometric",
+      "scenario": "warning",
+      "input_data": {
+        "age": 41,
+        "gender": "남성",
+        "heart_rate": 98,
+        "resting_heart_rate": 91,
+        "usual_resting_heart_rate": 69,
+        "sleep_hr": 3.3,
+        "steps": 1264,
+        "distance_km": 0.97,
+        "active_calories": 88,
+        "oxygen_saturation": 95,
+        "weight": 92,
+        "bmi": 30.0
+      },
+      "routine": {
+        "duration_min": 45,
+        "items": [
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 9
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 9
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 9
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 9
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "warning",
+        "expected_score_range": [
+          10,
+          30
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "휴식 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "warning",
+        "recommended_intensity": "저강도/휴식",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 126,
+        "expected_target_hr_high": 139,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO014",
+      "type": "biometric",
+      "scenario": "good",
+      "input_data": {
+        "age": 26,
+        "gender": "여성",
+        "heart_rate": 86,
+        "resting_heart_rate": 66,
+        "usual_resting_heart_rate": 62,
+        "sleep_hr": 7.5,
+        "steps": 7357,
+        "distance_km": 5.66,
+        "active_calories": 371,
+        "oxygen_saturation": 97,
+        "weight": 66,
+        "bmi": 22.0
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "good morning exercise",
+            "name_kr": "굿모닝 엑서사이즈",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 7
+          },
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 7
+          },
+          {
+            "name": "plank",
+            "name_kr": "플랭크",
+            "category": [
+              4
+            ],
+            "difficulty": 5,
+            "met": 8.0,
+            "duration_min": 7
+          },
+          {
+            "name": "scissor cross",
+            "name_kr": "시저 크로스",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          90,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 162,
+        "expected_target_hr_high": 181,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO046",
+      "type": "biometric",
+      "scenario": "caution",
+      "input_data": {
+        "age": 50,
+        "gender": "남성",
+        "heart_rate": 74,
+        "resting_heart_rate": 69,
+        "usual_resting_heart_rate": 59,
+        "sleep_hr": 4.8,
+        "steps": 3825,
+        "distance_km": 2.94,
+        "active_calories": 113,
+        "oxygen_saturation": 96,
+        "weight": 79,
+        "bmi": 26.2
+      },
+      "routine": {
+        "duration_min": 45,
+        "items": [
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 9
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 9
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 9
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 9
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "caution",
+        "expected_score_range": [
+          25,
+          45
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "저강도만 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "caution",
+        "recommended_intensity": "저-중강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 114,
+        "expected_target_hr_high": 130,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO056",
+      "type": "biometric",
+      "scenario": "warning",
+      "input_data": {
+        "age": 35,
+        "gender": "여성",
+        "heart_rate": 91,
+        "resting_heart_rate": 81,
+        "usual_resting_heart_rate": 59,
+        "sleep_hr": 3.4,
+        "steps": 2190,
+        "distance_km": 1.68,
+        "active_calories": 98,
+        "oxygen_saturation": 93,
+        "weight": 73,
+        "bmi": 24.2
+      },
+      "routine": {
+        "duration_min": 45,
+        "items": [
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 9
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 9
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 9
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 9
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "warning",
+        "expected_score_range": [
+          5,
+          25
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "휴식 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "warning",
+        "recommended_intensity": "저강도/휴식",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 123,
+        "expected_target_hr_high": 138,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO003",
+      "type": "biometric",
+      "scenario": "optimal",
+      "input_data": {
+        "age": 31,
+        "gender": "남성",
+        "heart_rate": 88,
+        "resting_heart_rate": 70,
+        "usual_resting_heart_rate": 70,
+        "sleep_hr": 7.7,
+        "steps": 11376,
+        "distance_km": 8.75,
+        "active_calories": 442,
+        "oxygen_saturation": 97,
+        "weight": 85,
+        "bmi": 25.3
+      },
+      "routine": {
+        "duration_min": 45,
+        "items": [
+          {
+            "name": "good morning exercise",
+            "name_kr": "굿모닝 엑서사이즈",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 9
+          },
+          {
+            "name": "side lunge",
+            "name_kr": "사이드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 9
+          },
+          {
+            "name": "plank",
+            "name_kr": "플랭크",
+            "category": [
+              4
+            ],
+            "difficulty": 5,
+            "met": 8.0,
+            "duration_min": 9
+          },
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 9
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 9
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          90,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 159,
+        "expected_target_hr_high": 177,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO028",
+      "type": "biometric",
+      "scenario": "moderate",
+      "input_data": {
+        "age": 33,
+        "gender": "남성",
+        "heart_rate": 89,
+        "resting_heart_rate": 72,
+        "usual_resting_heart_rate": 60,
+        "sleep_hr": 6.0,
+        "steps": 4637,
+        "distance_km": 3.57,
+        "active_calories": 208,
+        "oxygen_saturation": 97,
+        "weight": 84,
+        "bmi": 26.4
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 5
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "moderate_plus",
+        "expected_score_range": [
+          45,
+          65
+        ],
+        "keywords": [
+          "보통",
+          "주의"
+        ],
+        "exercise_recommendation": "중강도까지 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "moderate_plus",
+        "recommended_intensity": "중강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 135,
+        "expected_target_hr_high": 152,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO038",
+      "type": "biometric",
+      "scenario": "caution",
+      "input_data": {
+        "age": 52,
+        "gender": "남성",
+        "heart_rate": 82,
+        "resting_heart_rate": 71,
+        "usual_resting_heart_rate": 60,
+        "sleep_hr": 5.2,
+        "steps": 3302,
+        "distance_km": 2.54,
+        "active_calories": 179,
+        "oxygen_saturation": 95,
+        "weight": 62,
+        "bmi": 21.3
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 5
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "moderate",
+        "expected_score_range": [
+          35,
+          55
+        ],
+        "keywords": [
+          "보통",
+          "주의"
+        ],
+        "exercise_recommendation": "중강도까지 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "moderate",
+        "recommended_intensity": "중강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 124,
+        "expected_target_hr_high": 139,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO006",
+      "type": "biometric",
+      "scenario": "optimal",
+      "input_data": {
+        "age": 25,
+        "gender": "남성",
+        "heart_rate": 83,
+        "resting_heart_rate": 69,
+        "usual_resting_heart_rate": 68,
+        "sleep_hr": 8.2,
+        "steps": 8506,
+        "distance_km": 6.54,
+        "active_calories": 302,
+        "oxygen_saturation": 98,
+        "weight": 94,
+        "bmi": 31.6
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "cross lunge",
+            "name_kr": "크로스 런지",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 3.8,
+            "duration_min": 7
+          },
+          {
+            "name": "plank",
+            "name_kr": "플랭크",
+            "category": [
+              4
+            ],
+            "difficulty": 5,
+            "met": 8.0,
+            "duration_min": 7
+          },
+          {
+            "name": "side lunge",
+            "name_kr": "사이드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 7
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          90,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 164,
+        "expected_target_hr_high": 182,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO035",
+      "type": "biometric",
+      "scenario": "moderate",
+      "input_data": {
+        "age": 45,
+        "gender": "남성",
+        "heart_rate": 82,
+        "resting_heart_rate": 76,
+        "usual_resting_heart_rate": 67,
+        "sleep_hr": 6.5,
+        "steps": 4548,
+        "distance_km": 3.5,
+        "active_calories": 239,
+        "oxygen_saturation": 97,
+        "weight": 88,
+        "bmi": 26.1
+      },
+      "routine": {
+        "duration_min": 15,
+        "items": [
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "good",
+        "expected_score_range": [
+          60,
+          80
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "중-고강도 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "good",
+        "recommended_intensity": "중-고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 140,
+        "expected_target_hr_high": 155,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO044",
+      "type": "biometric",
+      "scenario": "caution",
+      "input_data": {
+        "age": 46,
+        "gender": "남성",
+        "heart_rate": 80,
+        "resting_heart_rate": 70,
+        "usual_resting_heart_rate": 60,
+        "sleep_hr": 5.1,
+        "steps": 2810,
+        "distance_km": 2.16,
+        "active_calories": 184,
+        "oxygen_saturation": 96,
+        "weight": 82,
+        "bmi": 24.9
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 7
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 7
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 7
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "caution",
+        "expected_score_range": [
+          30,
+          50
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "저강도만 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "caution",
+        "recommended_intensity": "저-중강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 117,
+        "expected_target_hr_high": 132,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO007",
+      "type": "biometric",
+      "scenario": "optimal",
+      "input_data": {
+        "age": 35,
+        "gender": "남성",
+        "heart_rate": 75,
+        "resting_heart_rate": 70,
+        "usual_resting_heart_rate": 66,
+        "sleep_hr": 8.0,
+        "steps": 11793,
+        "distance_km": 9.07,
+        "active_calories": 398,
+        "oxygen_saturation": 98,
+        "weight": 89,
+        "bmi": 32.1
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "side lunge",
+            "name_kr": "사이드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 7
+          },
+          {
+            "name": "burpee test",
+            "name_kr": "버피 테스트",
+            "category": [
+              4
+            ],
+            "difficulty": 5,
+            "met": 8.0,
+            "duration_min": 7
+          },
+          {
+            "name": "push up",
+            "name_kr": "푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 4,
+            "met": 6.0,
+            "duration_min": 7
+          },
+          {
+            "name": "good morning exercise",
+            "name_kr": "굿모닝 엑서사이즈",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          90,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 156,
+        "expected_target_hr_high": 174,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO055",
+      "type": "biometric",
+      "scenario": "warning",
+      "input_data": {
+        "age": 44,
+        "gender": "여성",
+        "heart_rate": 91,
+        "resting_heart_rate": 82,
+        "usual_resting_heart_rate": 65,
+        "sleep_hr": 4.0,
+        "steps": 1259,
+        "distance_km": 0.97,
+        "active_calories": 62,
+        "oxygen_saturation": 93,
+        "weight": 68,
+        "bmi": 26.0
+      },
+      "routine": {
+        "duration_min": 15,
+        "items": [
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 5
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 5
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "warning",
+        "expected_score_range": [
+          5,
+          25
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "휴식 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "warning",
+        "recommended_intensity": "저강도/휴식",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 120,
+        "expected_target_hr_high": 134,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO009",
+      "type": "biometric",
+      "scenario": "good",
+      "input_data": {
+        "age": 46,
+        "gender": "남성",
+        "heart_rate": 95,
+        "resting_heart_rate": 75,
+        "usual_resting_heart_rate": 70,
+        "sleep_hr": 7.3,
+        "steps": 8137,
+        "distance_km": 6.26,
+        "active_calories": 343,
+        "oxygen_saturation": 96,
+        "weight": 62,
+        "bmi": 22.1
+      },
+      "routine": {
+        "duration_min": 45,
+        "items": [
+          {
+            "name": "step forward dynamic lunge",
+            "name_kr": "스텝 포워드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "lying leg raise",
+            "name_kr": "라잉 레그 레이즈",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 9
+          },
+          {
+            "name": "bicycle crunch",
+            "name_kr": "바이시클 크런치",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 9
+          },
+          {
+            "name": "side lunge",
+            "name_kr": "사이드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 9
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          80,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 149,
+        "expected_target_hr_high": 164,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO015",
+      "type": "biometric",
+      "scenario": "good",
+      "input_data": {
+        "age": 33,
+        "gender": "남성",
+        "heart_rate": 73,
+        "resting_heart_rate": 63,
+        "usual_resting_heart_rate": 59,
+        "sleep_hr": 7.3,
+        "steps": 7245,
+        "distance_km": 5.57,
+        "active_calories": 381,
+        "oxygen_saturation": 97,
+        "weight": 84,
+        "bmi": 30.1
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "bicycle crunch",
+            "name_kr": "바이시클 크런치",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 5
+          },
+          {
+            "name": "lying leg raise",
+            "name_kr": "라잉 레그 레이즈",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "side lunge",
+            "name_kr": "사이드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 5
+          },
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          90,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 156,
+        "expected_target_hr_high": 175,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO016",
+      "type": "biometric",
+      "scenario": "good",
+      "input_data": {
+        "age": 43,
+        "gender": "남성",
+        "heart_rate": 84,
+        "resting_heart_rate": 74,
+        "usual_resting_heart_rate": 70,
+        "sleep_hr": 7.2,
+        "steps": 8168,
+        "distance_km": 6.28,
+        "active_calories": 269,
+        "oxygen_saturation": 98,
+        "weight": 78,
+        "bmi": 23.4
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "plank",
+            "name_kr": "플랭크",
+            "category": [
+              4
+            ],
+            "difficulty": 5,
+            "met": 8.0,
+            "duration_min": 7
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 7
+          },
+          {
+            "name": "lying leg raise",
+            "name_kr": "라잉 레그 레이즈",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 7
+          },
+          {
+            "name": "good morning exercise",
+            "name_kr": "굿모닝 엑서사이즈",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          90,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 151,
+        "expected_target_hr_high": 167,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO018",
+      "type": "biometric",
+      "scenario": "moderate_plus",
+      "input_data": {
+        "age": 44,
+        "gender": "남성",
+        "heart_rate": 78,
+        "resting_heart_rate": 66,
+        "usual_resting_heart_rate": 58,
+        "sleep_hr": 6.8,
+        "steps": 7482,
+        "distance_km": 5.76,
+        "active_calories": 213,
+        "oxygen_saturation": 97,
+        "weight": 63,
+        "bmi": 19.3
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "scissor cross",
+            "name_kr": "시저 크로스",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          70,
+          90
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 148,
+        "expected_target_hr_high": 165,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO048",
+      "type": "biometric",
+      "scenario": "caution",
+      "input_data": {
+        "age": 34,
+        "gender": "여성",
+        "heart_rate": 102,
+        "resting_heart_rate": 83,
+        "usual_resting_heart_rate": 68,
+        "sleep_hr": 4.8,
+        "steps": 3547,
+        "distance_km": 2.73,
+        "active_calories": 116,
+        "oxygen_saturation": 95,
+        "weight": 58,
+        "bmi": 19.3
+      },
+      "routine": {
+        "duration_min": 45,
+        "items": [
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 9
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 9
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 9
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 9
+          },
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 9
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "warning",
+        "expected_score_range": [
+          15,
+          35
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "휴식 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "warning",
+        "recommended_intensity": "저강도/휴식",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 124,
+        "expected_target_hr_high": 140,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO002",
+      "type": "biometric",
+      "scenario": "optimal",
+      "input_data": {
+        "age": 26,
+        "gender": "남성",
+        "heart_rate": 72,
+        "resting_heart_rate": 66,
+        "usual_resting_heart_rate": 66,
+        "sleep_hr": 7.5,
+        "steps": 11714,
+        "distance_km": 9.01,
+        "active_calories": 346,
+        "oxygen_saturation": 97,
+        "weight": 75,
+        "bmi": 23.9
+      },
+      "routine": {
+        "duration_min": 20,
+        "items": [
+          {
+            "name": "side lunge",
+            "name_kr": "사이드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 5,
+            "met": 5.0,
+            "duration_min": 5
+          },
+          {
+            "name": "lying leg raise",
+            "name_kr": "라잉 레그 레이즈",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 5
+          },
+          {
+            "name": "push up",
+            "name_kr": "푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 4,
+            "met": 6.0,
+            "duration_min": 5
+          },
+          {
+            "name": "Y-exercise",
+            "name_kr": "Y 엑서사이즈",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 4.5,
+            "duration_min": 5
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          90,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 162,
+        "expected_target_hr_high": 181,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO008",
+      "type": "biometric",
+      "scenario": "good",
+      "input_data": {
+        "age": 30,
+        "gender": "남성",
+        "heart_rate": 82,
+        "resting_heart_rate": 71,
+        "usual_resting_heart_rate": 66,
+        "sleep_hr": 7.4,
+        "steps": 8182,
+        "distance_km": 6.29,
+        "active_calories": 258,
+        "oxygen_saturation": 98,
+        "weight": 88,
+        "bmi": 29.9
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "plank",
+            "name_kr": "플랭크",
+            "category": [
+              4
+            ],
+            "difficulty": 5,
+            "met": 8.0,
+            "duration_min": 7
+          },
+          {
+            "name": "step forward dynamic lunge",
+            "name_kr": "스텝 포워드 런지",
+            "category": [
+              3
+            ],
+            "difficulty": 4,
+            "met": 4.0,
+            "duration_min": 7
+          },
+          {
+            "name": "crunch",
+            "name_kr": "크런치",
+            "category": [
+              2
+            ],
+            "difficulty": 4,
+            "met": 4.5,
+            "duration_min": 7
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "optimal",
+        "expected_score_range": [
+          80,
+          100
+        ],
+        "keywords": [
+          "양호",
+          "정상",
+          "충분"
+        ],
+        "exercise_recommendation": "고강도 포함 모든 운동 가능",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": false,
+        "should_cite_milewski": false,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "optimal",
+        "recommended_intensity": "고강도",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 160,
+        "expected_target_hr_high": 178,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    },
+    {
+      "id": "BIO041",
+      "type": "biometric",
+      "scenario": "caution",
+      "input_data": {
+        "age": 47,
+        "gender": "남성",
+        "heart_rate": 94,
+        "resting_heart_rate": 76,
+        "usual_resting_heart_rate": 61,
+        "sleep_hr": 5.5,
+        "steps": 2994,
+        "distance_km": 2.3,
+        "active_calories": 122,
+        "oxygen_saturation": 96,
+        "weight": 92,
+        "bmi": 29.0
+      },
+      "routine": {
+        "duration_min": 30,
+        "items": [
+          {
+            "name": "standing knee up",
+            "name_kr": "스탠딩 니업",
+            "category": [
+              1,
+              3
+            ],
+            "difficulty": 3,
+            "met": 3.8,
+            "duration_min": 7
+          },
+          {
+            "name": "hip thrust",
+            "name_kr": "힙 쓰러스트",
+            "category": [
+              3,
+              2
+            ],
+            "difficulty": 3,
+            "met": 3.5,
+            "duration_min": 7
+          },
+          {
+            "name": "standing side crunch",
+            "name_kr": "스탠딩 사이드 크런치",
+            "category": [
+              2,
+              3
+            ],
+            "difficulty": 3,
+            "met": 4.0,
+            "duration_min": 7
+          },
+          {
+            "name": "knee push up",
+            "name_kr": "니 푸시업",
+            "category": [
+              1,
+              2
+            ],
+            "difficulty": 3,
+            "met": 5.0,
+            "duration_min": 7
+          }
+        ]
+      },
+      "expected_health": {
+        "condition_level": "warning",
+        "expected_score_range": [
+          20,
+          40
+        ],
+        "keywords": [
+          "부족",
+          "휴식",
+          "피로"
+        ],
+        "exercise_recommendation": "휴식 권장",
+        "has_condition_score": true,
+        "has_grade": true,
+        "has_judgment_basis": true,
+        "should_cite_buchheit": true,
+        "should_cite_milewski": true,
+        "min_length": 80,
+        "max_length": 300,
+        "friendly_tone": true
+      },
+      "expected_exercise": {
+        "condition_level": "warning",
+        "recommended_intensity": "저강도/휴식",
+        "keywords": [
+          "루틴",
+          "운동",
+          "컨디션"
+        ],
+        "has_karvonen": true,
+        "expected_target_hr_low": 115,
+        "expected_target_hr_high": 129,
+        "target_hr_tolerance": 10,
+        "has_fit_assessment": true,
+        "has_coach_comment": true,
+        "min_length": 100,
+        "max_length": 350
+      }
+    }
+  ],
+  "chat_test_cases": [
+    {
+      "id": "CHAT010",
+      "type": "chat",
+      "category": "sleep",
+      "input_data": {
+        "message": "수면이 5시간밖에 안 됐는데 운동해도 될까요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": [
+          "수면",
+          "부족",
+          "휴식"
+        ],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT004",
+      "type": "chat",
+      "category": "sleep",
+      "input_data": {
+        "message": "수면이 3시간밖에 안 됐는데 운동해도 될까요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "수면",
+          "부족",
+          "휴식"
+        ],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT011",
+      "type": "chat",
+      "category": "heart_rate",
+      "input_data": {
+        "message": "안정시 심박수가 평소보다 18bpm 높아요. 운동해도 될까요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "심박",
+          "피로",
+          "휴식"
+        ],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": true,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT037",
+      "type": "chat",
+      "category": "activity",
+      "input_data": {
+        "message": "걸음수가 2000보밖에 안 돼요. 부족한가요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "걸음",
+          "활동",
+          "권장"
+        ],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT026",
+      "type": "chat",
+      "category": "exercise",
+      "input_data": {
+        "message": "워밍업 꼭 해야 하나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "워밍업",
+          "부상",
+          "준비"
+        ],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT025",
+      "type": "chat",
+      "category": "exercise",
+      "input_data": {
+        "message": "중강도 운동이 뭐예요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "강도",
+          "심박",
+          "운동"
+        ],
+        "should_cite_acsm": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT031",
+      "type": "chat",
+      "category": "condition",
+      "input_data": {
+        "message": "오늘 컨디션이 안 좋은데 운동해야 할까요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "컨디션",
+          "휴식",
+          "무리"
+        ],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT012",
+      "type": "chat",
+      "category": "heart_rate",
+      "input_data": {
+        "message": "RHR이 뭐예요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": [
+          "안정시",
+          "심박",
+          "측정"
+        ],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT005",
+      "type": "chat",
+      "category": "sleep",
+      "input_data": {
+        "message": "7시간 잤는데 운동해도 되나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "수면",
+          "충분",
+          "운동"
+        ],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT033",
+      "type": "chat",
+      "category": "condition",
+      "input_data": {
+        "message": "근육통이 있는데 운동해도 되나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "근육통",
+          "회복",
+          "운동"
+        ],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT022",
+      "type": "chat",
+      "category": "exercise",
+      "input_data": {
+        "message": "워밍업 꼭 해야 하나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "워밍업",
+          "부상",
+          "준비"
+        ],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT029",
+      "type": "chat",
+      "category": "exercise",
+      "input_data": {
+        "message": "중강도 운동이 뭐예요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": [
+          "강도",
+          "심박",
+          "운동"
+        ],
+        "should_cite_acsm": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT024",
+      "type": "chat",
+      "category": "exercise",
+      "input_data": {
+        "message": "HIIT가 뭐예요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "고강도",
+          "인터벌",
+          "운동"
+        ],
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT019",
+      "type": "chat",
+      "category": "heart_rate",
+      "input_data": {
+        "message": "운동할 때 심박수 얼마까지 올려도 되나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "최대",
+          "심박",
+          "강도"
+        ],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "has_karvonen": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT013",
+      "type": "chat",
+      "category": "heart_rate",
+      "input_data": {
+        "message": "운동할 때 심박수 얼마까지 올려도 되나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "최대",
+          "심박",
+          "강도"
+        ],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "has_karvonen": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT035",
+      "type": "chat",
+      "category": "condition",
+      "input_data": {
+        "message": "매일 운동해도 되나요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": [
+          "휴식",
+          "회복",
+          "주"
+        ],
+        "should_cite_acsm": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT036",
+      "type": "chat",
+      "category": "condition",
+      "input_data": {
+        "message": "근육통이 있는데 운동해도 되나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "근육통",
+          "회복",
+          "운동"
+        ],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT027",
+      "type": "chat",
+      "category": "exercise",
+      "input_data": {
+        "message": "유산소랑 근력 운동 순서가 어떻게 되나요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": [
+          "유산소",
+          "근력",
+          "순서"
+        ],
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT014",
+      "type": "chat",
+      "category": "heart_rate",
+      "input_data": {
+        "message": "안정시 심박수가 평소보다 15bpm 높아요. 운동해도 될까요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": [
+          "심박",
+          "피로",
+          "휴식"
+        ],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": true,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT023",
+      "type": "chat",
+      "category": "exercise",
+      "input_data": {
+        "message": "유산소랑 근력 운동 순서가 어떻게 되나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "유산소",
+          "근력",
+          "순서"
+        ],
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT021",
+      "type": "chat",
+      "category": "exercise",
+      "input_data": {
+        "message": "중강도 운동이 뭐예요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "강도",
+          "심박",
+          "운동"
+        ],
+        "should_cite_acsm": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT032",
+      "type": "chat",
+      "category": "condition",
+      "input_data": {
+        "message": "매일 운동해도 되나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "휴식",
+          "회복",
+          "주"
+        ],
+        "should_cite_acsm": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT038",
+      "type": "chat",
+      "category": "activity",
+      "input_data": {
+        "message": "만보 걷기가 정말 효과 있나요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": [
+          "걷기",
+          "효과",
+          "건강"
+        ],
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT030",
+      "type": "chat",
+      "category": "exercise",
+      "input_data": {
+        "message": "워밍업 꼭 해야 하나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "워밍업",
+          "부상",
+          "준비"
+        ],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT020",
+      "type": "chat",
+      "category": "heart_rate",
+      "input_data": {
+        "message": "안정시 심박수가 평소보다 10bpm 높아요. 운동해도 될까요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "심박",
+          "피로",
+          "휴식"
+        ],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": true,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT017",
+      "type": "chat",
+      "category": "heart_rate",
+      "input_data": {
+        "message": "안정시 심박수가 평소보다 15bpm 높아요. 운동해도 될까요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "심박",
+          "피로",
+          "휴식"
+        ],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": true,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT040",
+      "type": "chat",
+      "category": "activity",
+      "input_data": {
+        "message": "만보 걷기가 정말 효과 있나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "걷기",
+          "효과",
+          "건강"
+        ],
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT034",
+      "type": "chat",
+      "category": "condition",
+      "input_data": {
+        "message": "오늘 컨디션이 안 좋은데 운동해야 할까요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "컨디션",
+          "휴식",
+          "무리"
+        ],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT003",
+      "type": "chat",
+      "category": "sleep",
+      "input_data": {
+        "message": "수면이 운동에 왜 중요한가요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "수면",
+          "회복",
+          "근육"
+        ],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT001",
+      "type": "chat",
+      "category": "sleep",
+      "input_data": {
+        "message": "수면이 5.5시간밖에 안 됐는데 운동해도 될까요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": [
+          "수면",
+          "부족",
+          "휴식"
+        ],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT039",
+      "type": "chat",
+      "category": "activity",
+      "input_data": {
+        "message": "걸음수가 3000보밖에 안 돼요. 부족한가요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": [
+          "걸음",
+          "활동",
+          "권장"
+        ],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT028",
+      "type": "chat",
+      "category": "exercise",
+      "input_data": {
+        "message": "HIIT가 뭐예요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": [
+          "고강도",
+          "인터벌",
+          "운동"
+        ],
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT006",
+      "type": "chat",
+      "category": "sleep",
+      "input_data": {
+        "message": "수면이 운동에 왜 중요한가요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "수면",
+          "회복",
+          "근육"
+        ],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT007",
+      "type": "chat",
+      "category": "sleep",
+      "input_data": {
+        "message": "수면이 4.5시간밖에 안 됐는데 운동해도 될까요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "수면",
+          "부족",
+          "휴식"
+        ],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT009",
+      "type": "chat",
+      "category": "sleep",
+      "input_data": {
+        "message": "수면이 운동에 왜 중요한가요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "수면",
+          "회복",
+          "근육"
+        ],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT015",
+      "type": "chat",
+      "category": "heart_rate",
+      "input_data": {
+        "message": "RHR이 뭐예요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "안정시",
+          "심박",
+          "측정"
+        ],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT016",
+      "type": "chat",
+      "category": "heart_rate",
+      "input_data": {
+        "message": "운동할 때 심박수 얼마까지 올려도 되나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "최대",
+          "심박",
+          "강도"
+        ],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "has_karvonen": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT018",
+      "type": "chat",
+      "category": "heart_rate",
+      "input_data": {
+        "message": "RHR이 뭐예요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "안정시",
+          "심박",
+          "측정"
+        ],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT002",
+      "type": "chat",
+      "category": "sleep",
+      "input_data": {
+        "message": "7시간 잤는데 운동해도 되나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": [
+          "수면",
+          "충분",
+          "운동"
+        ],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT008",
+      "type": "chat",
+      "category": "sleep",
+      "input_data": {
+        "message": "7시간 잤는데 운동해도 되나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": [
+          "수면",
+          "충분",
+          "운동"
+        ],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    }
+  ]
+}

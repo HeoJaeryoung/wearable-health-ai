@@ -1,0 +1,28 @@
+{
+  "metadata": {
+    "stage": "langchain",
+    "version": "v2.1",
+    "timestamp": "2026-01-05T10:50:11.386022",
+    "api_base_url": "http://localhost:8000",
+    "description": "LangChain Chain + Structured Output 적용 버전",
+    "improvements": [
+      "LangChain ChatPromptTemplate 사용",
+      "with_structured_output() 적용",
+      "Pipeline (prompt | llm) 구성",
+      "Few-shot Prompting 추가"
+    ],
+    "condition_grades": "6등급 (A/B/C+/C/D/F)"
+  },
+  "summary": {
+    "timestamp": "2026-01-05T10:50:11.385025",
+    "stage": "langchain",
+    "version": "v2.1",
+    "total_queries": 0,
+    "by_service": {}
+  },
+  "results": {
+    "health": [],
+    "exercise": [],
+    "chat": []
+  }
+}

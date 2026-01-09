@@ -1,0 +1,660 @@
+{
+  "metadata": {
+    "generated_at": "2026-01-02T21:46:51.204975",
+    "version": "2.0",
+    "description": "3단계 평가용 테스트 데이터 (Baseline/LangChain/Fine-tuned)",
+    "total_count": 100,
+    "biometric_count": 60,
+    "chat_count": 40
+  },
+  "test_cases": [
+    {
+      "id": "CHAT010",
+      "category": "sleep",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "수면이 5시간밖에 안 됐는데 운동해도 될까요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": ["수면", "부족", "휴식"],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT004",
+      "category": "sleep",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "수면이 3시간밖에 안 됐는데 운동해도 될까요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["수면", "부족", "휴식"],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT011",
+      "category": "heart_rate",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "안정시 심박수가 평소보다 18bpm 높아요. 운동해도 될까요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["심박", "피로", "휴식"],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": true,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT037",
+      "category": "activity",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "걸음수가 2000보밖에 안 돼요. 부족한가요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["걸음", "활동", "권장"],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT026",
+      "category": "exercise",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "워밍업 꼭 해야 하나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["워밍업", "부상", "준비"],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT025",
+      "category": "exercise",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "중강도 운동이 뭐예요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["강도", "심박", "운동"],
+        "should_cite_acsm": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT031",
+      "category": "condition",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "오늘 컨디션이 안 좋은데 운동해야 할까요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["컨디션", "휴식", "무리"],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT012",
+      "category": "heart_rate",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "RHR이 뭐예요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": ["안정시", "심박", "측정"],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT005",
+      "category": "sleep",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "7시간 잤는데 운동해도 되나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["수면", "충분", "운동"],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT033",
+      "category": "condition",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "근육통이 있는데 운동해도 되나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["근육통", "회복", "운동"],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT022",
+      "category": "exercise",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "워밍업 꼭 해야 하나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["워밍업", "부상", "준비"],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT029",
+      "category": "exercise",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "중강도 운동이 뭐예요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": ["강도", "심박", "운동"],
+        "should_cite_acsm": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT024",
+      "category": "exercise",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "HIIT가 뭐예요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["고강도", "인터벌", "운동"],
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT019",
+      "category": "heart_rate",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "운동할 때 심박수 얼마까지 올려도 되나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["최대", "심박", "강도"],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "has_karvonen": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT013",
+      "category": "heart_rate",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "운동할 때 심박수 얼마까지 올려도 되나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["최대", "심박", "강도"],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "has_karvonen": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT035",
+      "category": "condition",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "매일 운동해도 되나요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": ["휴식", "회복", "주"],
+        "should_cite_acsm": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT036",
+      "category": "condition",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "근육통이 있는데 운동해도 되나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["근육통", "회복", "운동"],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT027",
+      "category": "exercise",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "유산소랑 근력 운동 순서가 어떻게 되나요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": ["유산소", "근력", "순서"],
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT014",
+      "category": "heart_rate",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "안정시 심박수가 평소보다 15bpm 높아요. 운동해도 될까요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": ["심박", "피로", "휴식"],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": true,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT023",
+      "category": "exercise",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "유산소랑 근력 운동 순서가 어떻게 되나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["유산소", "근력", "순서"],
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT021",
+      "category": "exercise",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "중강도 운동이 뭐예요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["강도", "심박", "운동"],
+        "should_cite_acsm": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT032",
+      "category": "condition",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "매일 운동해도 되나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["휴식", "회복", "주"],
+        "should_cite_acsm": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT038",
+      "category": "activity",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "만보 걷기가 정말 효과 있나요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": ["걷기", "효과", "건강"],
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT030",
+      "category": "exercise",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "워밍업 꼭 해야 하나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["워밍업", "부상", "준비"],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT020",
+      "category": "heart_rate",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "안정시 심박수가 평소보다 10bpm 높아요. 운동해도 될까요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["심박", "피로", "휴식"],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": true,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT017",
+      "category": "heart_rate",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "안정시 심박수가 평소보다 15bpm 높아요. 운동해도 될까요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["심박", "피로", "휴식"],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": true,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT040",
+      "category": "activity",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "만보 걷기가 정말 효과 있나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["걷기", "효과", "건강"],
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT034",
+      "category": "condition",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "오늘 컨디션이 안 좋은데 운동해야 할까요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["컨디션", "휴식", "무리"],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT003",
+      "category": "sleep",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "수면이 운동에 왜 중요한가요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["수면", "회복", "근육"],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT001",
+      "category": "sleep",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "수면이 5.5시간밖에 안 됐는데 운동해도 될까요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": ["수면", "부족", "휴식"],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT039",
+      "category": "activity",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "걸음수가 3000보밖에 안 돼요. 부족한가요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": ["걸음", "활동", "권장"],
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT028",
+      "category": "exercise",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "HIIT가 뭐예요?",
+        "character": "angel_coach"
+      },
+      "expected": {
+        "keywords": ["고강도", "인터벌", "운동"],
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT006",
+      "category": "sleep",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "수면이 운동에 왜 중요한가요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["수면", "회복", "근육"],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT007",
+      "category": "sleep",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "수면이 4.5시간밖에 안 됐는데 운동해도 될까요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["수면", "부족", "휴식"],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT009",
+      "category": "sleep",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "수면이 운동에 왜 중요한가요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["수면", "회복", "근육"],
+        "should_cite_milewski": true,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT015",
+      "category": "heart_rate",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "RHR이 뭐예요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["안정시", "심박", "측정"],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT016",
+      "category": "heart_rate",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "운동할 때 심박수 얼마까지 올려도 되나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["최대", "심박", "강도"],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "has_karvonen": true,
+        "tone": "friendly",
+        "min_length": 80,
+        "max_length": 250
+      }
+    },
+    {
+      "id": "CHAT018",
+      "category": "heart_rate",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "RHR이 뭐예요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["안정시", "심박", "측정"],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT002",
+      "category": "sleep",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "7시간 잤는데 운동해도 되나요?",
+        "character": "booster_coach"
+      },
+      "expected": {
+        "keywords": ["수면", "충분", "운동"],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    },
+    {
+      "id": "CHAT008",
+      "category": "sleep",
+      "difficulty": "medium",
+      "input_data": {
+        "message": "7시간 잤는데 운동해도 되나요?",
+        "character": "devil_coach"
+      },
+      "expected": {
+        "keywords": ["수면", "충분", "운동"],
+        "should_cite_milewski": false,
+        "should_cite_buchheit": false,
+        "tone": "friendly",
+        "min_length": 50,
+        "max_length": 200
+      }
+    }
+  ]
+}

@@ -46,12 +46,11 @@ function TrainerChatbot() {
     try {
       const userId = localStorage.getItem('user_email') || 'guest@test.com';
       const response = await sendMessage(userId, userMessage, character);
-
       setMessages((prev) => [
         ...prev,
         {
           role: 'assistant',
-          content: response.response || '응답을 받지 못했습니다.',
+          content: response.reply || '응답을 받지 못했습니다.',
           character: response.character,
         },
       ]);
